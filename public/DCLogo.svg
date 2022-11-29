@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="721px" height="400px" viewBox="0 0 721 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <defs>
+        <linearGradient x1="0%" y1="23.1031756%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2B50AA" offset="0%"></stop>
+            <stop stop-color="#5CABFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#474343" offset="0%"></stop>
+            <stop stop-color="#00171F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <path d="M521,0 C631.45695,0 721,89.54305 721,200 C721,310.45695 631.45695,400 521,400 L491,400 L406.001,315.001 L521,315 C584.512746,315 636,263.512746 636,200 C636,136.487254 584.512746,85 521,85 L406,85 L321,0 L521,0 Z" id="Combined-Shape" fill="url(#linearGradient-1)" transform="translate(521.000000, 200.000000) scale(-1, -1) translate(-521.000000, -200.000000) "></path>
+            <path d="M200,0 C310.45695,0 400,89.54305 400,200 C400,310.45695 310.45695,400 200,400 L170,400 L85.001,315.001 L200,315 C263.512746,315 315,263.512746 315,200 C315,136.487254 263.512746,85 200,85 L85,85 L0,0 L200,0 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

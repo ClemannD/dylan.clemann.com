@@ -1,0 +1,493 @@
+#ArchitectureGraphic {
+    @keyframes ButtonFlicker1 {
+        from,
+        5% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1;
+        }
+
+        15%,
+        45% {
+            opacity: 0;
+        }
+
+        50%,
+        75% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    @keyframes ButtonFlicker2 {
+        from,
+        15% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        25%,
+        35% {
+            opacity: 0;
+        }
+
+        40%,
+        65% {
+            opacity: 1;
+        }
+        70%,
+        85% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    @keyframes ButtonFlicker3 {
+        from,
+        75% {
+            opacity: 1;
+        }
+
+        85% {
+            opacity: 0;
+        }
+
+        90%,
+        to {
+            opacity: 1;
+        }
+    }
+
+    #externalServer1Button1Light1 {
+        animation: ButtonFlicker1 3s infinite;
+    }
+    #externalServer1Button4Light1 {
+        animation: ButtonFlicker2 5s infinite;
+    }
+    #externalServer2Button3Light1 {
+        animation: ButtonFlicker1 4s infinite;
+    }
+    #externalServer2Button4Light1 {
+        animation: ButtonFlicker2 3s infinite;
+    }
+    #externalServer3Button1Light1 {
+        animation: ButtonFlicker3 3s infinite;
+    }
+
+    $animationDuration: 3s;
+    $animationDelay: 2s;
+
+    #codeLine1 {
+        opacity: 0;
+        animation: code1 $animationDuration $animationDelay infinite;
+    }
+    #codeLine2 {
+        opacity: 0;
+        animation: code2 $animationDuration $animationDelay infinite;
+    }
+    #codeLine3 {
+        opacity: 0;
+        animation: code3 $animationDuration $animationDelay infinite;
+    }
+    #codeLine4 {
+        opacity: 0;
+        animation: code4 $animationDuration $animationDelay infinite;
+    }
+    #codeLine5 {
+        opacity: 0;
+        animation: code5 $animationDuration $animationDelay infinite;
+    }
+    #codeLine6 {
+        opacity: 0;
+        animation: code6 $animationDuration $animationDelay infinite;
+    }
+    #codeLine7 {
+        opacity: 0;
+        animation: code7 $animationDuration $animationDelay infinite;
+    }
+    #codeLine8 {
+        opacity: 0;
+        animation: code8 $animationDuration $animationDelay infinite;
+    }
+    #codeLine9 {
+        opacity: 0;
+        animation: code9 $animationDuration $animationDelay infinite;
+    }
+    #codeLine10 {
+        opacity: 0;
+        animation: code10 $animationDuration $animationDelay infinite;
+    }
+    #codeLine11 {
+        opacity: 0;
+        animation: code11 $animationDuration $animationDelay infinite;
+    }
+    #codeLine12 {
+        opacity: 0;
+        animation: code12 $animationDuration $animationDelay infinite;
+    }
+
+    @keyframes code1 {
+        from {
+            opacity: 0;
+        }
+        5% {
+            opacity: 0.5;
+        }
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code2 {
+        from,
+        5% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 0.5;
+        }
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code3 {
+        from,
+        5%,
+        10% {
+            opacity: 0;
+        }
+        15% {
+            opacity: 0.5;
+        }
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code4 {
+        from,
+        5%,
+        10%,
+        15% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.5;
+        }
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code5 {
+        from,
+        5%,
+        10%,
+        15%,
+        20% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0.5;
+        }
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code6 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 0.5;
+        }
+        35%,
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code7 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30% {
+            opacity: 0;
+        }
+        35% {
+            opacity: 0.5;
+        }
+        40%,
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code8 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.5;
+        }
+        45%,
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code9 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40% {
+            opacity: 0;
+        }
+        45% {
+            opacity: 0.5;
+        }
+        50%,
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code10 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        55%,
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code11 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50% {
+            opacity: 0;
+        }
+        55% {
+            opacity: 0.5;
+        }
+        60%,
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes code12 {
+        from,
+        5%,
+        10%,
+        15%,
+        20%,
+        25%,
+        30%,
+        35%,
+        40%,
+        45%,
+        50%,
+        55% {
+            opacity: 0;
+        }
+        60% {
+            opacity: 0.5;
+        }
+        65%,
+        70%,
+        75%,
+        80%,
+        85%,
+        90%,
+        95%,
+        to {
+            opacity: 1;
+        }
+    }
+}

@@ -14,6 +14,7 @@ export const renderProps = {
         [INLINES.HYPERLINK]: (node: Hyperlink, children: any) => (
             <a
                 href={node.data.uri}
+                rel="noreferrer"
                 target="_blank"
                 style={{
                     // fontWeight: 700,

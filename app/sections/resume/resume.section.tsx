@@ -5,7 +5,6 @@ import { getResumeData } from './resume.data';
 
 export default async function ResumeSection() {
     const resumeData = await getResumeData();
-    console.log('resumeData', resumeData);
 
     return (
         <div className="bg-slate-100">

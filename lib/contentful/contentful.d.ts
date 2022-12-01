@@ -3,6 +3,31 @@
 import { Asset, Entry } from 'contentful';
 import { Document } from '@contentful/rich-text-types';
 
+export interface IBioFields {
+    /** Section Label */
+    sectionLabel?: string | undefined;
+
+    /** Bio */
+    bio?: Document | undefined;
+}
+
+export interface IBio extends Entry<IBioFields> {
+    sys: {
+        id: string;
+        type: string;
+        createdAt: string;
+        updatedAt: string;
+        locale: string;
+        contentType: {
+            sys: {
+                id: 'bio';
+                linkType: 'ContentType';
+                type: 'Link';
+            };
+        };
+    };
+}
+
 export interface IHeaderFields {
     /** Logo */
     logo?: Asset | undefined;
@@ -104,14 +129,20 @@ export interface IResumePostFields {
     /** Job Title */
     jobTitle?: string | undefined;
 
+    /** Job Start Date */
+    jobStartDate?: string | undefined;
+
     /** Job Dates */
     jobDates?: string | undefined;
 
-    /** tags */
-    tags?: IProjectTag[] | undefined;
+    /** Job Dates 2 */
+    jobDates2?: string | undefined;
 
     /** Job Description */
-    jobDescription?: string | undefined;
+    jobDescription?: Document | undefined;
+
+    /** tags */
+    tags?: IProjectTag[] | undefined;
 }
 
 export interface IResumePost extends Entry<IResumePostFields> {
@@ -132,12 +163,13 @@ export interface IResumePost extends Entry<IResumePostFields> {
 }
 
 export type CONTENT_TYPE =
+    | 'bio'
     | 'header'
     | 'projectPost'
     | 'projectTag'
     | 'resumePost';
 
-export type IEntry = IHeader | IProjectPost | IProjectTag | IResumePost;
+export type IEntry = IBio | IHeader | IProjectPost | IProjectTag | IResumePost;
 
 export type LOCALE_CODE = 'en-US';
 

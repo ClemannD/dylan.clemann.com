@@ -6,7 +6,7 @@ export interface IContainerProps {
 export default function Container(props: IContainerProps) {
     return (
         <div
-            className={`mx-auto max-w-7xl px-5 md:px-8 lg:px-12 ${
+            className={`mx-auto w-full max-w-[1420px] px-5 md:px-8 lg:px-12 ${
                 props.className ?? ''
             }`}
         >

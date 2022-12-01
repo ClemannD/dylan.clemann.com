@@ -42,13 +42,15 @@ export default function Skills({ skills }: ISkillsProps) {
 
     return (
         <span
-            className="min-w-[120px] font-bold"
-            style={{
-                color: skill.color,
-            }}
+            className="min-w-[120px] bg-blue-gradient2 bg-clip-text font-bold text-transparent"
+            // style={{
+            //     color: skill.color,
+            // }}
         >
             {skill.name.substring(0, skillNameIndex + 1)}
-            <span className="animate-blink font-thin opacity-100">|</span>
+            <span className="animate-blink font-thin text-black opacity-100">
+                |
+            </span>
         </span>
     );
 }

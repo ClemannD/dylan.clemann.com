@@ -19,7 +19,8 @@ a {
     box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* TODO: Dark mode */
+/* @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
     }
@@ -27,7 +28,7 @@ a {
         color: white;
         background: black;
     }
-}
+} */
 
 @layer utilities {
     .clip-bio-polygon {

@@ -1,9 +1,9 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Image from 'next/image';
 import { IProjectPostFields } from '../../../lib/contentful/contentful';
 import { renderProps } from '../../../lib/contentful/contentful-document.helper';
-import Image from 'next/image';
-import Tag from '../../components/ui-elements/tag.component';
 import { getImageWidthForHeight } from '../../../lib/contentful/contentful-image.helper';
+import Tag from '../../components/ui-elements/tag.component';
 
 export interface IProjectProps {
     project: IProjectPostFields;
@@ -23,9 +23,6 @@ export default function Project(props: IProjectProps) {
                 shadow-md 
                 md:flex-row
             `}
-            // transition
-            // ease-in-out
-            // hover:scale-[1.01]
         >
             <div className="relative h-[300px] w-full md:hidden">
                 <a
@@ -93,14 +90,14 @@ export default function Project(props: IProjectProps) {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            View on Github{' '}
                             <Image
-                                className="ml-2"
-                                src="/github.svg"
+                                className="mr-1.5"
+                                src="/Github.svg"
                                 width="16"
                                 height="16"
                                 alt="Github logo"
                             ></Image>
+                            View on Github
                         </a>
                     </div>
                     <div className="mt-3 flex flex-wrap">
@@ -120,25 +117,6 @@ export default function Project(props: IProjectProps) {
                     </div>
                 </div>
             </div>
-            {/* <div className="flex flex-col p-5">
-                {project.tags
-                    ?.filter((tag) => tag.fields.tagIcon)
-                    .map((tag) => (
-                        <Image
-                            className="mb-4"
-                            key={tag.sys.id}
-                            src={
-                                'https:' + tag.fields.tagIcon?.fields.file?.url!
-                            }
-                            alt={tag.fields.tagIcon?.fields.description!}
-                            height="70"
-                            width={getImageWidthForHeight(
-                                tag.fields.tagIcon!,
-                                70
-                            )}
-                        ></Image>
-                    ))}
-            </div> */}
         </div>
     );
 }

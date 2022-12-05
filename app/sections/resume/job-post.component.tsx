@@ -1,6 +1,7 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { IResumePostFields } from '../../../lib/contentful/contentful';
 import { renderProps } from '../../../lib/contentful/contentful-document.helper';
+import Tag from '../../components/ui-elements/tag.component';
 
 export interface IJobPostProps {
     jobPost: IResumePostFields;
@@ -16,6 +17,9 @@ export default function JobPost({ jobPost }: IJobPostProps) {
                 bg-white
                 p-5
                 shadow-lg
+                transition
+                ease-in-out 
+                hover:scale-[1.01] 
                 lg:p-7
             `}
         >
@@ -42,27 +46,7 @@ export default function JobPost({ jobPost }: IJobPostProps) {
 
             <div className="mt-auto flex flex-wrap">
                 {jobPost.tags?.map((tag) => (
-                    <div
-                        key={tag.sys.id}
-                        className={`
-                            mt-1 
-                            mr-[5px] 
-                            h-5
-                            rounded
-                            bg-deep-blue
-                            px-2
-                            text-[10px]
-                            font-medium
-                            leading-5
-                            text-white
-                            shadow-sm 
-                            transition 
-                            ease-in-out
-                            hover:scale-[1.05]
-                        `}
-                    >
-                        {tag.fields.tagTitle}
-                    </div>
+                    <Tag key={tag.sys.id} tag={tag}></Tag>
                 ))}
             </div>
         </div>

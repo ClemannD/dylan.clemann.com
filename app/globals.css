@@ -31,10 +31,19 @@ a {
 } */
 
 @layer utilities {
-    .clip-bio-polygon {
+    .clip-square {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .clip-polygon {
         clip-path: polygon(0 0, 100% 3rem, 100% 100%, 0% 100%);
     }
-    .clip-bio-polygon-lg {
+    .clip-polygon-reverse {
+        clip-path: polygon(0 2rem, 100% 0%, 100% 100%, 0 100%);
+    }
+    .clip-polygon-lg {
         clip-path: polygon(0 0, 100% 5rem, 100% 100%, 0% 100%);
+    }
+    .clip-polygon-reverse-lg {
+        clip-path: polygon(0 5rem, 100% 0%, 100% 100%, 0% 100%);
     }
 }

@@ -7,7 +7,7 @@ export default async function ResumeSection() {
     const resumeData = await getResumeData();
 
     return (
-        <div className="bg-slate-100">
+        <div className="bg-slate-100 pb-32">
             <Container className="py-10 lg:py-16">
                 <SectionLabel
                     label="Professional Experience"

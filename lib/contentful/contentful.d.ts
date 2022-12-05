@@ -66,14 +66,20 @@ export interface IProjectPostFields {
     /** projectImage */
     projectImage?: Asset | undefined;
 
+    /** Project Link */
+    projectLink?: string | undefined;
+
+    /** Github Repo */
+    githubRepo?: string | undefined;
+
     /** tags */
     tags?: IProjectTag[] | undefined;
 
-    /** Project Description */
-    projectDescription?: string | undefined;
-
     /** Project Post */
     projectPost?: Document | undefined;
+
+    /** Project Description */
+    projectDescription?: Document | undefined;
 }
 
 /** Model for a dev project */
@@ -88,6 +94,31 @@ export interface IProjectPost extends Entry<IProjectPostFields> {
         contentType: {
             sys: {
                 id: 'projectPost';
+                linkType: 'ContentType';
+                type: 'Link';
+            };
+        };
+    };
+}
+
+export interface IProjectSectionFields {
+    /** Project Section Title */
+    projectSectionTitle?: string | undefined;
+
+    /** Project Posts */
+    projectPosts?: IProjectPost[] | undefined;
+}
+
+export interface IProjectSection extends Entry<IProjectSectionFields> {
+    sys: {
+        id: string;
+        type: string;
+        createdAt: string;
+        updatedAt: string;
+        locale: string;
+        contentType: {
+            sys: {
+                id: 'projectSection';
                 linkType: 'ContentType';
                 type: 'Link';
             };
@@ -162,14 +193,48 @@ export interface IResumePost extends Entry<IResumePostFields> {
     };
 }
 
+export interface IResumeSectionFields {
+    /** Resume Section Title */
+    resumeSectionTitle?: string | undefined;
+
+    /** Job Posts */
+    jobPosts?: IResumePost[] | undefined;
+}
+
+export interface IResumeSection extends Entry<IResumeSectionFields> {
+    sys: {
+        id: string;
+        type: string;
+        createdAt: string;
+        updatedAt: string;
+        locale: string;
+        contentType: {
+            sys: {
+                id: 'resumeSection';
+                linkType: 'ContentType';
+                type: 'Link';
+            };
+        };
+    };
+}
+
 export type CONTENT_TYPE =
     | 'bio'
     | 'header'
     | 'projectPost'
+    | 'projectSection'
     | 'projectTag'
-    | 'resumePost';
+    | 'resumePost'
+    | 'resumeSection';
 
-export type IEntry = IBio | IHeader | IProjectPost | IProjectTag | IResumePost;
+export type IEntry =
+    | IBio
+    | IHeader
+    | IProjectPost
+    | IProjectSection
+    | IProjectTag
+    | IResumePost
+    | IResumeSection;
 
 export type LOCALE_CODE = 'en-US';
 

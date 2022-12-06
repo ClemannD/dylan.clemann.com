@@ -2,7 +2,10 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image';
 import { IProjectPostFields } from '../../../lib/contentful/contentful';
 import { renderProps } from '../../../lib/contentful/contentful-document.helper';
-import { getImageWidthForHeight } from '../../../lib/contentful/contentful-image.helper';
+import {
+    getImageHeightForWidth,
+    getImageWidthForHeight,
+} from '../../../lib/contentful/contentful-image.helper';
 import Tag from '../../components/ui-elements/tag.component';
 
 export interface IProjectProps {
@@ -40,11 +43,11 @@ export default function Project(props: IProjectProps) {
             </div>
 
             <Image
-                className="hidden rounded-l md:block"
+                className="hidden rounded-l md:block "
                 src={'https:' + project.projectImage?.fields.file?.url!}
                 alt={project.projectImage?.fields.description!}
-                height="400"
-                width={getImageWidthForHeight(project.projectImage!, 400)}
+                height={getImageHeightForWidth(project.projectImage!, 300)}
+                width={300}
             ></Image>
             <div className="flex flex-col p-5">
                 <a

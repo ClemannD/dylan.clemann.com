@@ -8,7 +8,7 @@ export default async function HeaderNavbarComponent() {
 
     return (
         <nav>
-            <Container className="flex h-20 items-center justify-between lg:h-28">
+            <Container className="flex h-20 items-center justify-between pt-12 lg:h-28">
                 <div className="flex items-center">
                     <Image
                         className="lg:hidden"
@@ -39,6 +39,7 @@ export default async function HeaderNavbarComponent() {
                     href={headerData.githubLink}
                     target="_blank"
                     className="duration-400 rounded-md p-2 backdrop-opacity-30 transition ease-in-out hover:scale-110 hover:bg-blue-800/10"
+                    rel="noreferrer"
                 >
                     <Image
                         src={'/Github.svg'}

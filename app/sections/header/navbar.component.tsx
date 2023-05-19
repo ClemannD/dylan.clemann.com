@@ -8,7 +8,7 @@ export default async function HeaderNavbarComponent() {
 
     return (
         <nav>
-            <Container className="flex h-20 items-center justify-between pt-12 lg:h-28">
+            <Container className="flex h-20 items-center justify-between lg:h-28 lg:pt-12">
                 <div className="flex items-center">
                     <Image
                         className="lg:hidden"

@@ -43,7 +43,7 @@ export default function Project(props: IProjectProps) {
             </div>
 
             <Image
-                className="hidden rounded-l md:block "
+                className="hidden rounded-l object-cover object-left-top md:block"
                 src={'https:' + project.projectImage?.fields.file?.url!}
                 alt={project.projectImage?.fields.description!}
                 height={getImageHeightForWidth(project.projectImage!, 300)}

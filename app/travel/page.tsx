@@ -57,6 +57,30 @@ const tripsConfig = [
         dates: 'January 2022',
         coverImageUrl: 'http://clemann.app/2022/aspen/aspen-cover.jpeg',
     },
+    {
+        name: 'Yosemite/Napa/SF',
+        shortDescription: '',
+        location: 'California, USA',
+        coordinates: '35.725726915213684, -83.53474530173256',
+        dates: 'August 2022',
+        coverImageUrl: 'http://clemann.app/2022/california/yosemite-cover.jpeg',
+    },
+    {
+        name: 'Rocky Mountain National Park',
+        shortDescription: '',
+        location: 'Colorado, USA',
+        coordinates: '35.725726915213684, -83.53474530173256',
+        dates: 'August 2020',
+        coverImageUrl: 'http://clemann.app/2020/colorado/rocky-cover.jpeg',
+    },
+    {
+        name: 'Europe',
+        shortDescription: '',
+        location: 'France/Switzerland/Italy',
+        coordinates: '35.725726915213684, -83.53474530173256',
+        dates: 'June 2019',
+        coverImageUrl: 'http://clemann.app/2019/europe/wengen-cover.jpeg',
+    },
 ];
 
 export default function TravelPage() {

@@ -1,6 +1,4 @@
-import Image from 'next/image';
-
-const tripsConfig = [
+export const TripsConfig = [
     {
         name: 'Yellowstone/Grand Teton',
         shortDescription: '',
@@ -8,6 +6,7 @@ const tripsConfig = [
         coordinates: '43.58053312862212, -111.10850692582751',
         dates: 'August 2023',
         coverImageUrl: 'http://clemann.app/2023/wyoming/lake_of_crags1.jpeg',
+        path: 'travels/2023-08-Wyoming',
     },
     {
         name: 'Smokey Mountains',
@@ -16,6 +15,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'May 2023',
         coverImageUrl: 'http://clemann.app/2023/tennessee/smokey.jpeg',
+        path: 'travels/2023-05-Smokey',
     },
     {
         name: 'F1 Miami GrandPrix',
@@ -24,6 +24,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'May 2023',
         coverImageUrl: 'http://clemann.app/2023/miami-f1/f1-cover.jpeg',
+        path: 'travels/2023-05-F1',
     },
     {
         name: 'Vermont',
@@ -32,6 +33,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'February 2023',
         coverImageUrl: 'http://clemann.app/2023/vermont/vermont-cover.jpeg',
+        path: 'travels/2023-02-Vermont',
     },
     {
         name: 'Whistler',
@@ -40,6 +42,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'January 2023',
         coverImageUrl: 'http://clemann.app/2023/bc/whistler-cover.jpeg',
+        path: 'travels/2023-01-Whistler',
     },
     {
         name: 'Switzerland',
@@ -48,6 +51,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'December 2022',
         coverImageUrl: 'http://clemann.app/2022/switzerland/zermatt-cover.jpeg',
+        path: 'travels/2022-12-Switzerland',
     },
     {
         name: 'Aspen',
@@ -56,14 +60,16 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'January 2022',
         coverImageUrl: 'http://clemann.app/2022/aspen/aspen-cover.jpeg',
+        path: 'travels/2022-01-Aspen',
     },
     {
         name: 'Yosemite/Napa/SF',
         shortDescription: '',
         location: 'California, USA',
         coordinates: '35.725726915213684, -83.53474530173256',
-        dates: 'August 2022',
+        dates: 'August 2021',
         coverImageUrl: 'http://clemann.app/2022/california/yosemite-cover.jpeg',
+        path: 'travels/2021-08-California',
     },
     {
         name: 'Rocky Mountain National Park',
@@ -72,6 +78,7 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'August 2020',
         coverImageUrl: 'http://clemann.app/2020/colorado/rocky-cover.jpeg',
+        path: 'travels/2020-08-Colorado',
     },
     {
         name: 'Europe',
@@ -80,55 +87,6 @@ const tripsConfig = [
         coordinates: '35.725726915213684, -83.53474530173256',
         dates: 'June 2019',
         coverImageUrl: 'http://clemann.app/2019/europe/wengen-cover.jpeg',
+        path: 'travels/2019-06-Europe',
     },
 ];
-
-export default function TravelPage() {
-    return (
-        <div className="container mx-auto px-4 pb-10 lg:px-10">
-            <div className="flex justify-between py-8">
-                <h1 className="text-5xl font-black text-black">Travels</h1>
-            </div>
-
-            <div className="grid grid-cols-1 gap-8  lg:grid-cols-2 xl:grid-cols-3">
-                {tripsConfig.map((trip) => (
-                    <TripBox key={trip.name} trip={trip} />
-                ))}
-            </div>
-        </div>
-    );
-}
-
-function TripBox({ trip }: { trip: typeof tripsConfig[0] }) {
-    return (
-        <div className=" cursor-pointer overflow-clip rounded-lg bg-slate-100 shadow-xl transition-transform ease-in-out hover:scale-[1.02] ">
-            <div className="relative h-72 w-full min-w-[288px]">
-                <Image
-                    className="object-cover"
-                    src={trip.coverImageUrl}
-                    fill
-                    placeholder="blur"
-                    blurDataURL={
-                        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPMrpx0BgAFEQJETLQTEwAAAABJRU5ErkJggg=='
-                    }
-                    quality={100}
-                    alt={trip.name}
-                />
-            </div>
-
-            <div className="p-4">
-                <h4 className="text font-black text-sky-600">{trip.dates}</h4>
-                <h2 className="mb-2 text-2xl font-black text-black">
-                    {trip.name}
-                </h2>
-                <h3 className="text font-medium tracking-tight text-zinc-600 ">
-                    {trip.location}
-                </h3>
-                <h3 className="text-xs font-light  text-zinc-600 ">
-                    {trip.coordinates}
-                </h3>
-                <p className="text-lg font-black ">{trip.shortDescription}</p>
-            </div>
-        </div>
-    );
-}

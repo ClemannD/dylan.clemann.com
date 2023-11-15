@@ -13,6 +13,5 @@ export async function getProjectSectionData(): Promise<IProjectSectionFields> {
             }
         );
 
-    console.log('projectSection', projectSection);
     return projectSection.fields;
 }

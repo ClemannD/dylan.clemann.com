@@ -5,7 +5,6 @@ import { getProjectSectionData } from './projects.data';
 
 export default async function ProjectsSection() {
     const projectSection = await getProjectSectionData();
-    console.log('projectSection', projectSection.projectPosts);
 
     return (
         <div className="relative -mt-24 ">

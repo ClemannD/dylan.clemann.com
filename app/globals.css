@@ -19,8 +19,7 @@ a {
     box-sizing: border-box;
 }
 
-/* TODO: Dark mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
     }
@@ -28,7 +27,7 @@ a {
         color: white;
         background: black;
     }
-} */
+}
 
 @layer utilities {
     .clip-square {

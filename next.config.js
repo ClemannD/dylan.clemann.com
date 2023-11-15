@@ -6,6 +6,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'images.ctfassets.net',
             },
+            {
+                protocol: 'http',
+                hostname: 'clemann.app',
+            },
         ],
     },
 };

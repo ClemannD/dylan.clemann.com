@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { getImageWidthForHeight } from '../../../lib/contentful/contentful-image.helper';
 import Container from '../../components/layout/container.component';
 import { getHeaderData } from './header.data';
+import Link from 'next/link';
 
 export default async function HeaderNavbarComponent() {
     const headerData = await getHeaderData();
@@ -35,19 +36,28 @@ export default async function HeaderNavbarComponent() {
                     </div>
                 </div>
 
-                <a
-                    href={headerData.githubLink}
-                    target="_blank"
-                    className="duration-400 rounded-md p-2 backdrop-opacity-30 transition ease-in-out hover:scale-110 hover:bg-blue-800/10"
-                    rel="noreferrer"
-                >
-                    <Image
-                        src={'/Github.svg'}
-                        alt={'github'}
-                        height="35"
-                        width="35"
-                    ></Image>
-                </a>
+                <div className="flex items-center gap-12">
+                    <Link
+                        href={'/travel'}
+                        className="font-bold text-almostBlack transition-transform ease-in-out hover:scale-105"
+                    >
+                        Travel
+                    </Link>
+
+                    <a
+                        href={headerData.githubLink}
+                        target="_blank"
+                        className="duration-400 rounded-md p-2 backdrop-opacity-30 transition ease-in-out hover:scale-110 hover:bg-blue-800/10"
+                        rel="noreferrer"
+                    >
+                        <Image
+                            src={'/Github.svg'}
+                            alt={'github'}
+                            height="35"
+                            width="35"
+                        ></Image>
+                    </a>
+                </div>
             </Container>
         </nav>
     );

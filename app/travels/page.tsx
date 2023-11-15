@@ -48,15 +48,20 @@ function TripBox({ trip }: { trip: typeof TripsConfig[0] }) {
 
             <div className="p-4">
                 <h4 className="text font-black text-sky-600">{trip.dates}</h4>
-                <h2 className="mb-2 text-2xl font-black text-black">
-                    {trip.name}
-                </h2>
-                <h3 className="text font-medium tracking-tight text-zinc-600 ">
+                <h2 className="text-2xl font-black text-black">{trip.name}</h2>
+                <h3 className="mb-5 text-sm font-medium tracking-tight text-zinc-600 ">
                     {trip.location}
                 </h3>
-                <h3 className="text-xs font-light  text-zinc-600 ">
-                    {trip.coordinates}
-                </h3>
+                <div className="flex gap-2">
+                    {trip.tags.map((tag) => (
+                        <div
+                            key={tag}
+                            className="rounded-full bg-slate-200 px-3 py-1 text-xs font-medium tracking-tight text-black"
+                        >
+                            {tag}
+                        </div>
+                    ))}
+                </div>
                 <p className="text-lg font-black ">{trip.shortDescription}</p>
             </div>
         </Link>

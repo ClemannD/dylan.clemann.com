@@ -30,7 +30,7 @@ function TripBox({ trip }: { trip: typeof TripsConfig[0] }) {
     return (
         <Link
             href={trip.path}
-            className=" cursor-pointer overflow-clip rounded bg-slate-100 shadow-xl transition-transform ease-in-out hover:scale-[1.02] "
+            className=" transform-gpu cursor-pointer overflow-clip rounded bg-slate-100 shadow-xl transition-transform ease-in-out hover:scale-[1.02]"
         >
             <div className="relative h-72 w-full min-w-[288px]">
                 <Image

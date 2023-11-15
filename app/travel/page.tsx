@@ -83,8 +83,10 @@ function TripBox({ trip }: { trip: typeof tripsConfig[0] }) {
                     className="object-cover"
                     src={trip.coverImageUrl}
                     fill
-                    // placeholder="blur"
-                    // blurDataURL={trip.coverImageUrl}
+                    placeholder="blur"
+                    blurDataURL={
+                        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPMrpx0BgAFEQJETLQTEwAAAABJRU5ErkJggg=='
+                    }
                     quality={100}
                     alt={trip.name}
                 />
@@ -92,7 +94,9 @@ function TripBox({ trip }: { trip: typeof tripsConfig[0] }) {
 
             <div className="p-4">
                 <h4 className="text font-black text-sky-600">{trip.dates}</h4>
-                <h2 className="mb-2 text-2xl font-black">{trip.name}</h2>
+                <h2 className="mb-2 text-2xl font-black text-black">
+                    {trip.name}
+                </h2>
                 <h3 className="text font-medium tracking-tight text-zinc-600 ">
                     {trip.location}
                 </h3>

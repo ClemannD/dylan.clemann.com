@@ -8,11 +8,11 @@ export default function TravelPage() {
             <div className="container mx-auto">
                 <div className="mb-10 flex flex-col  justify-center gap-4">
                     <h1 className=" text-4xl font-black uppercase">
-                        Dylan's Travels
+                        Dylan&apos;s Travels
                     </h1>
                     <h2 className=" text-2xl font-bold ">
-                        A collection of pictures and videos from the places I've
-                        been
+                        A collection of pictures and videos from the places
+                        I&apos;ve been
                     </h2>
                 </div>
             </div>

@@ -23,6 +23,10 @@ a {
     html {
         color-scheme: dark;
     }
+    body {
+        color: black;
+        background: black;
+    }
 }
 
 @layer utilities {

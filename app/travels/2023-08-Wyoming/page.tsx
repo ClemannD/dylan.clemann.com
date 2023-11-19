@@ -33,6 +33,7 @@ export default function WyomingPage() {
                     />
 
                     <Image
+                        className="mb-4"
                         src={
                             'http://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg'
                         }
@@ -50,6 +51,13 @@ export default function WyomingPage() {
                         }
                         quality={100}
                     />
+
+                    <video controls width="100%" className="mb-4">
+                        <source
+                            src="http://clemann.app/2023/wyoming/IMG_3191-smaller.mov"
+                            type="video/mp4"
+                        />
+                    </video>
 
                     <Image
                         src={

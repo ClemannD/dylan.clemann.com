@@ -11,8 +11,8 @@ export default async function TravelLayout({
     const headerData = await getHeaderData();
 
     return (
-        <div className="min-h-screen w-full transform-gpu bg-slate-300 bg-[url('/topography.svg')] bg-repeat">
-            <nav className="mb-10 h-20 w-full bg-slate-100 px-4 lg:px-10">
+        <div className="min-h-screen w-full  bg-slate-300 bg-[url('/topography.svg')] bg-repeat">
+            <nav className="h-20 w-full bg-slate-100 px-4 lg:px-10">
                 <div className="container mx-auto  h-full">
                     <div className="flex h-full items-center justify-between">
                         <Link

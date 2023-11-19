@@ -4,7 +4,7 @@ import { TripsConfig } from './components/travel.data';
 
 export default function TravelPage() {
     return (
-        <div className=" mx-auto max-w-[2800px] px-4 pb-10 lg:px-10">
+        <div className=" mx-auto max-w-[2800px] px-4 pb-10 pt-10 lg:px-10">
             <div className="container mx-auto">
                 <div className="mb-10 flex flex-col  justify-center gap-4">
                     <h1 className=" text-4xl font-black uppercase">
@@ -41,7 +41,8 @@ function TripBox({ trip }: { trip: typeof TripsConfig[0] }) {
                     blurDataURL={
                         'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPMrpx0BgAFEQJETLQTEwAAAABJRU5ErkJggg=='
                     }
-                    quality={100}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={90}
                     alt={trip.name}
                 />
             </div>

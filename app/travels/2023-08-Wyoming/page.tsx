@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import HikeInfo from '../components/hike-info.component';
+import MediaCarousel from '../components/media-carousel.component';
 
 export default function WyomingPage() {
     return (
@@ -32,7 +33,45 @@ export default function WyomingPage() {
                         totalTime="5:01:43"
                     />
 
-                    <Image
+                    <MediaCarousel
+                        media={[
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake_of_crags1.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-selfie.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-nap.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-boys.jpeg',
+                                type: 'IMAGE',
+                            },
+                            {
+                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-rachel-hands-up.jpeg',
+                                type: 'IMAGE',
+                            },
+
+                            // {
+                            //     url: 'http://clemann.app/2023/wyoming/IMG_3191-smaller.mov',
+                            //     type: 'VIDEO',
+                            // },
+                        ]}
+                    />
+
+                    {/* <Image
                         className="mb-4"
                         src={
                             'http://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg'
@@ -52,7 +91,44 @@ export default function WyomingPage() {
                         quality={100}
                     />
 
-                    <video controls width="100%" className="mb-4">
+                    <div className="flex flex-col gap-4 lg:flex-row">
+                        {/* <video
+                            controls
+                            className="mb-4 w-full lg:w-1/2"
+                            playsInline
+                            disablePictureInPicture
+                            disableRemotePlayback
+                            controlsList="nodownload"
+                        >
+                            <source
+                                src="http://clemann.app/2023/wyoming/hike-up.mov"
+                                type="video/mp4"
+                            />
+                        </video> 
+                        <video
+                            controls
+                            className="mb-4 w-full lg:w-1/2"
+                            playsInline
+                            disablePictureInPicture
+                            disableRemotePlayback
+                            controlsList="nodownload"
+                        >
+                            <source
+                                src="http://clemann.app/2023/wyoming/hike-up2-smaller2.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+
+                    <video
+                        controls
+                        width="100%"
+                        className="mb-4"
+                        playsInline
+                        disablePictureInPicture
+                        disableRemotePlayback
+                        controlsList="nodownload"
+                    >
                         <source
                             src="http://clemann.app/2023/wyoming/IMG_3191-smaller.mov"
                             type="video/mp4"
@@ -76,7 +152,7 @@ export default function WyomingPage() {
                             'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPMrpx0BgAFEQJETLQTEwAAAABJRU5ErkJggg=='
                         }
                         quality={100}
-                    />
+                    /> */}
                 </div>
             </section>
         </div>

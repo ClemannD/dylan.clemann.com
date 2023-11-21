@@ -9,12 +9,14 @@ export default function MediaCarousel({
 }: {
     media: { url: string; description?: string; type: 'IMAGE' | 'VIDEO' }[];
 }) {
-    const [selectedMedia, setSelectedMedia] = useState(media[0]);
+    const [selectedMediaIndex, setSelectedMediaIndex] = useState(0);
+    const selectedMedia = media[selectedMediaIndex];
 
     return (
         <div className="flex h-full min-h-[560px] w-full flex-col gap-3 lg:h-[860px] lg:flex-row">
             <div className="relative h-auto flex-1 lg:h-full">
-                {media.map((mediaItem) =>
+                {
+                    // media.map((mediaItem, index) =>
                     selectedMedia.type === 'IMAGE' ? (
                         <Image
                             key={selectedMedia.url}
@@ -22,10 +24,10 @@ export default function MediaCarousel({
                             alt={selectedMedia.description || ''}
                             fill
                             className={cn(
-                                'h-auto w-full object-contain ',
-                                selectedMedia.url === mediaItem.url
-                                    ? 'block'
-                                    : 'hidden'
+                                'h-auto w-full object-contain '
+                                // index === selectedMediaIndex
+                                //     ? 'block'
+                                //     : 'hidden'
                             )}
                             quality={100}
                         />
@@ -42,14 +44,15 @@ export default function MediaCarousel({
                             <source src={selectedMedia.url} type="video/mp4" />
                         </video>
                     )
-                )}
+                    // )
+                }
             </div>
 
             <div className="flex flex-row flex-wrap gap-3 lg:flex-col">
-                {media.map((mediaItem) => (
+                {media.map((mediaItem, index) => (
                     <div
                         key={mediaItem.url}
-                        onClick={() => setSelectedMedia(mediaItem)}
+                        onClick={() => setSelectedMediaIndex(index)}
                         className="cursor-pointer"
                     >
                         <Image
@@ -59,7 +62,7 @@ export default function MediaCarousel({
                             width="100"
                             className={cn(
                                 'object-cover',
-                                selectedMedia.url === mediaItem.url
+                                selectedMediaIndex === index
                                     ? 'border-2 border-sky-600 opacity-100 shadow'
                                     : 'opacity-80'
                             )}

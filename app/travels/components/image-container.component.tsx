@@ -7,12 +7,12 @@ type Props = {
 
 export default function ImageContainer({ photo }: Props) {
     const widthHeightRatio = photo.height / photo.width;
-    const galleryHeight = Math.ceil(350 * widthHeightRatio);
+    const galleryHeight = Math.ceil(400 * widthHeightRatio);
     const photoSpans = Math.ceil(galleryHeight / 10) + 1;
 
     return (
         <div
-            className="w-[350px] justify-self-center"
+            className="w-full justify-self-center p-1"
             style={{ gridRow: `span ${photoSpans}` }}
         >
             <div className="group cursor-pointer overflow-hidden rounded">

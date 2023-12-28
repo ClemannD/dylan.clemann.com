@@ -8,7 +8,7 @@ type Props = {
 export default function ImageContainer({ photo }: Props) {
     const widthHeightRatio = photo.height / photo.width;
     const galleryHeight = Math.ceil(250 * widthHeightRatio);
-    const photoSpans = Math.ceil(galleryHeight / 10) + 1;
+    const photoSpans = Math.ceil(galleryHeight / 5) + 1;
 
     return (
         <div

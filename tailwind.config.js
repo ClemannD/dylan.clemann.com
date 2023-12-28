@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             gridTemplateColumns: {
-                gallery: 'repeat(auto-fit, minmax(250px, 1fr))',
+                gallery: 'repeat(auto-fit, minmax(350px, 1fr))',
             },
             keyframes: {
                 blink: {

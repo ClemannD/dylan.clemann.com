@@ -19,14 +19,14 @@ const lakeOfTheCragsMedia: Photo[] = [
     },
     {
         id: 'lake-of-the-crags-boys',
-        width: 2016,
-        height: 1512,
+        width: 1512,
+        height: 2016,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-boys.webp',
     },
     {
         id: 'lake-of-the-crags-dnr',
-        width: 2016,
-        height: 1512,
+        width: 1512,
+        height: 2016,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-dnr.webp',
     },
     {
@@ -43,8 +43,8 @@ const lakeOfTheCragsMedia: Photo[] = [
     },
     {
         id: 'lake-of-the-crags-selfie',
-        width: 2016,
-        height: 1512,
+        width: 1512,
+        height: 2016,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-selfie.webp',
     },
     {

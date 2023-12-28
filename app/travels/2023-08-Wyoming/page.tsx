@@ -68,8 +68,8 @@ const lakeOfTheCragsMedia: Photo[] = [
     },
     {
         id: 'dnr-canyon-view',
-        width: 1512,
-        height: 2016,
+        width: 2016,
+        height: 1512,
         src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/dnr-canyon-view.webp',
     },
     {

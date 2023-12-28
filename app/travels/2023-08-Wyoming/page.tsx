@@ -53,6 +53,67 @@ const lakeOfTheCragsMedia: Photo[] = [
         height: 1512,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags.webp',
     },
+    // Testing
+    {
+        id: 'creek-vista',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/creek-vista.webp',
+    },
+    {
+        id: 'creek',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/creek.webp',
+    },
+    {
+        id: 'dnr-canyon-view',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/dnr-canyon-view.webp',
+    },
+    {
+        id: 'endor-view',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/endor-view.webp',
+    },
+    {
+        id: 'endor-walk',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/endor-walk.webp',
+    },
+    {
+        id: 'glacier',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/glacier.webp',
+    },
+    {
+        id: 'glacier2',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/glacier2.webp',
+    },
+    {
+        id: 'valley-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/valley-view.webp',
+    },
+    {
+        id: 'valley-view2',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/valley-view2.webp',
+    },
+    {
+        id: 'valley-walk',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/wyoming/teton/cascade-creek/valley-walk.webp',
+    },
 ];
 
 export default async function WyomingPage() {

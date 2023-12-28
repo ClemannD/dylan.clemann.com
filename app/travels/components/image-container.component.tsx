@@ -7,12 +7,12 @@ type Props = {
 
 export default function ImageContainer({ photo }: Props) {
     const widthHeightRatio = photo.height / photo.width;
-    const galleryHeight = Math.ceil(400 * widthHeightRatio);
+    const galleryHeight = Math.ceil(250 * widthHeightRatio);
     const photoSpans = Math.ceil(galleryHeight / 10) + 1;
 
     return (
         <div
-            className="w-full justify-self-center p-1"
+            className="w-[250px] justify-self-center"
             style={{ gridRow: `span ${photoSpans}` }}
         >
             <div className="group cursor-pointer overflow-hidden rounded">
@@ -22,10 +22,10 @@ export default function ImageContainer({ photo }: Props) {
                         alt={photo.alt ?? ''}
                         width={photo.width}
                         height={photo.height}
-                        sizes="350px"
+                        sizes="250px"
                         placeholder="blur"
                         blurDataURL={photo.blurredDataUrl}
-                        className="group-hover:opacity-75"
+                        className="transition-opacity duration-200 ease-in-out group-hover:opacity-75"
                     />
                 ) : (
                     <Image
@@ -33,7 +33,7 @@ export default function ImageContainer({ photo }: Props) {
                         alt={photo.alt ?? ''}
                         width={photo.width}
                         height={photo.height}
-                        sizes="350px"
+                        sizes="250px"
                         className="group-hover:opacity-75"
                     />
                 )}

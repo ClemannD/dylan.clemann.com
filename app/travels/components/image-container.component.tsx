@@ -12,10 +12,10 @@ export default function ImageContainer({ photo }: Props) {
 
     return (
         <div
-            className="w-[250px] justify-self-center"
+            className="mb-2 w-full justify-self-center md:mb-auto md:w-[250px]"
             style={{ gridRow: `span ${photoSpans}` }}
         >
-            <div className="group cursor-pointer overflow-hidden rounded">
+            <div className="group cursor-pointer overflow-hidden ">
                 {photo.blurredDataUrl ? (
                     <Image
                         src={photo.src}

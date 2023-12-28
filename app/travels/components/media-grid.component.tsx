@@ -9,7 +9,7 @@ export default async function MediaGrid({ images }: { images: Photo[] }) {
     const photosWithBlur = await addBlurredDataUrls(images);
 
     return (
-        <div className="grid auto-rows-[5px] grid-cols-gallery ">
+        <div className="mb-1 auto-rows-[5px] grid-cols-gallery md:mb-auto md:grid">
             {photosWithBlur.map((photo) => (
                 <ImageContainer key={photo.id} photo={photo} />
             ))}

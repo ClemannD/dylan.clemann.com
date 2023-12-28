@@ -1,8 +1,61 @@
 import Image from 'next/image';
+import { Photo } from '../../../models/image.model';
 import HikeInfo from '../components/hike-info.component';
 import MediaCarousel from '../components/media-carousel.component';
+import MediaGrid from '../components/media-grid.component';
 
-export default function WyomingPage() {
+const lakeOfTheCragsMedia: Photo[] = [
+    {
+        id: 'emerald-pond',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/emerald-pond.webp',
+    },
+    {
+        id: 'jenny-lake',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/jenny-lake.webp',
+    },
+    {
+        id: 'lake-of-the-crags-boys',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-boys.webp',
+    },
+    {
+        id: 'lake-of-the-crags-dnr',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-dnr.webp',
+    },
+    {
+        id: 'lake-of-the-crags-nap',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-nap.webp',
+    },
+    {
+        id: 'lake-of-the-crags-rachel-hands-up',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-rachel-hands-up.webp',
+    },
+    {
+        id: 'lake-of-the-crags-selfie',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags-selfie.webp',
+    },
+    {
+        id: 'lake-of-the-crags',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/lake-of-the-crags.webp',
+    },
+];
+
+export default async function WyomingPage() {
     return (
         <div className="">
             <section className="w-full bg-white">
@@ -33,48 +86,14 @@ export default function WyomingPage() {
                         totalTime="5:01:43"
                     />
 
-                    <MediaCarousel
-                        media={[
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake_of_crags1.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-selfie.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-nap.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-boys.jpeg',
-                                type: 'IMAGE',
-                            },
-                            {
-                                url: 'http://clemann.app/2023/wyoming/lake-of-the-crags-rachel-hands-up.jpeg',
-                                type: 'IMAGE',
-                            },
-
-                            // {
-                            //     url: 'http://clemann.app/2023/wyoming/IMG_3191-smaller.mov',
-                            //     type: 'VIDEO',
-                            // },
-                        ]}
-                    />
+                    {/* <MediaCarousel media={lakeOfTheCragsMedia} /> */}
+                    {/* @ts-expect-error Server Component */}
+                    <MediaGrid images={lakeOfTheCragsMedia} />
 
                     {/* <Image
                         className="mb-4"
                         src={
-                            'http://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg'
+                            'https://clemann.app/2023/wyoming/lake-of-the-crags1.jpeg'
                         }
                         alt={'Lake of the Crags'}
                         sizes="100vw"
@@ -101,7 +120,7 @@ export default function WyomingPage() {
                             controlsList="nodownload"
                         >
                             <source
-                                src="http://clemann.app/2023/wyoming/hike-up.mov"
+                                src="https://clemann.app/2023/wyoming/hike-up.mov"
                                 type="video/mp4"
                             />
                         </video> 
@@ -114,7 +133,7 @@ export default function WyomingPage() {
                             controlsList="nodownload"
                         >
                             <source
-                                src="http://clemann.app/2023/wyoming/hike-up2-smaller2.mov"
+                                src="https://clemann.app/2023/wyoming/hike-up2-smaller2.mov"
                                 type="video/mp4"
                             />
                         </video>
@@ -130,14 +149,14 @@ export default function WyomingPage() {
                         controlsList="nodownload"
                     >
                         <source
-                            src="http://clemann.app/2023/wyoming/IMG_3191-smaller.mov"
+                            src="https://clemann.app/2023/wyoming/IMG_3191-smaller.mov"
                             type="video/mp4"
                         />
                     </video>
 
                     <Image
                         src={
-                            'http://clemann.app/2023/wyoming/lake_of_crags1.jpeg'
+                            'https://clemann.app/2023/wyoming/lake_of_crags1.jpeg'
                         }
                         alt={'Lake of the Crags'}
                         sizes="100vw"

@@ -118,6 +118,43 @@ export default async function WyomingPage() {
                     />
                 </div>
             </section>
+
+            <section className="w-full bg-slate-100">
+                <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
+                    <div className="mb-10 flex justify-between">
+                        <div className="">
+                            <div className="text-medium mb-2 flex w-fit items-center gap-2 rounded-lg bg-slate-100 px-3 py-0.5 font-medium tracking-tight text-black">
+                                <div className="pb-1 text-lg leading-none">
+                                    ⛰️
+                                </div>
+                                <div> Hike</div>
+                            </div>
+                            <h2 className="text-3xl font-black">
+                                Mount Washburn
+                            </h2>
+                            <h3>Yellowstone, Wyoming</h3>
+                        </div>
+
+                        <div className="text-sm uppercase text-zinc-700">
+                            August 25th, 2023
+                        </div>
+                    </div>
+
+                    <HikeInfo
+                        embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-dunraven-pass-to-mount-washburn-7cac11e?scrollZoom=false&u=i&sh=pxis8l"
+                        distance="6.76 mi"
+                        elevationGain="1,434 ft"
+                        totalTime="3:15:57"
+                    />
+
+                    {/* @ts-expect-error Server Component */}
+                    <MediaGrid
+                        imageConfig={
+                            ImagesConfig['2023/wyoming/yellowstone/washburn']
+                        }
+                    />
+                </div>
+            </section>
         </div>
     );
 }

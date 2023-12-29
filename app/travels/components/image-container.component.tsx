@@ -10,7 +10,8 @@ export default function ImageContainer({
     isPano?: boolean;
 }) {
     return (
-        <div className="group mb-2 cursor-pointer overflow-hidden">
+        <div className="group mb-2  overflow-hidden">
+            {/* <div className="group mb-2 cursor-pointer overflow-hidden"> */}
             <Image
                 src={photo.src}
                 alt={photo.alt ?? ''}
@@ -19,7 +20,7 @@ export default function ImageContainer({
                 sizes={isPano ? '1500px' : '550px'}
                 placeholder={photo.blurredDataUrl ? 'blur' : 'empty'}
                 blurDataURL={photo.blurredDataUrl ?? ''}
-                className="transition-opacity duration-200 ease-in-out group-hover:opacity-90"
+                // className="transition-opacity duration-200 ease-in-out group-hover:opacity-90"
             />
         </div>
     );

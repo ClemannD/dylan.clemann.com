@@ -45,7 +45,7 @@ export default async function WyomingPage() {
                 </div>
             </section>
 
-            <section className="w-full bg-slate-200">
+            <section className="w-full bg-slate-100">
                 <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
                     <div className="mb-10 flex justify-between">
                         <div className="">

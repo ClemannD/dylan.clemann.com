@@ -79,15 +79,16 @@ export default async function WyomingPage() {
                 title="Lake of the Crags"
               />
               <SectionLink
-                href="#cascade-canyon"
-                icon="⛰️"
-                title="Cascade Canyon"
-              />
-              <SectionLink
                 href="#table-mountain"
                 icon="⛰️"
                 title="Table Mountain"
               />
+              <SectionLink
+                href="#cascade-canyon"
+                icon="⛰️"
+                title="Cascade Canyon"
+              />
+              <SectionLink href="#mount-glory" icon="⛰️" title="Mount Glory" />
             </div>
 
             <div className="mb-3 flex flex-col gap-1">
@@ -96,10 +97,27 @@ export default async function WyomingPage() {
                   Yellowstone National Park
                 </h5>
               </Link>
+
+              <SectionLink
+                href="#artist-point"
+                icon="🏞️"
+                title="Artist Point"
+              />
               <SectionLink
                 href="#mount-washburn"
                 icon="⛰️"
                 title="Mount Washburn"
+              />
+              <SectionLink
+                href="#geysers"
+                icon="💨"
+                title="Geysers and Hot Springs"
+              />
+              <SectionLink href="#firehole" icon="🏞️" title="Firehole River" />
+              <SectionLink
+                href="#random"
+                icon="📸"
+                title="Random Pics from the Trip"
               />
             </div>
           </div>

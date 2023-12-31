@@ -33,13 +33,15 @@ export default async function WyomingPage() {
     <div className="">
       <ScrollTopButton />
 
-      <section className="border-t border-b bg-white ">
+      <section className="border-t  bg-white ">
         <Image
           src="https://clemann.app/2023/wyoming/teton/table-mountain/pano-004-grand-teton-pano.webp"
           width={8130}
           height={1910}
           sizes="100vw"
           alt="Panorama of the Tetons"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAIAAAB2XpiaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVR4nGN4/f//soP3TbySGLjVADZhBkEXiAxiAAAAAElFTkSuQmCC"
         />
 
         <div className="container mx-auto w-full py-6 px-4 lg:py-10 lg:px-0">
@@ -117,10 +119,7 @@ export default async function WyomingPage() {
         <MediaGrid imageConfig={ImagesConfig['2023/wyoming/teton']} />
       </section>
 
-      <section
-        id="lake-of-the-crags"
-        className="w-full border-y bg-white  pb-10"
-      >
+      <section id="lake-of-the-crags">
         <SectionHeader
           title="Lake of the Crags"
           stickyHeaderTitle="Grand Teton National Park"

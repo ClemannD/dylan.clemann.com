@@ -33,7 +33,7 @@ export default async function WyomingPage() {
     <div className="">
       <ScrollTopButton />
 
-      <section className="border-t  bg-white ">
+      <section className="border-t bg-white ">
         <Image
           src="https://clemann.app/2023/wyoming/teton/table-mountain/pano-004-grand-teton-pano.webp"
           width={8130}
@@ -106,7 +106,7 @@ export default async function WyomingPage() {
         </div>
       </section>
 
-      <section id="grand-teton" className="">
+      <section id="grand-teton">
         <SectionHeader
           title="Grand Teton National Park"
           stickyHeaderTitle="Grand Teton National Park"
@@ -147,6 +147,34 @@ export default async function WyomingPage() {
         />
       </section>
 
+      <section id="table-mountain">
+        <SectionHeader
+          title="Table Mountain"
+          stickyHeaderTitle="Grand Teton National Park"
+          stickyHeaderSubtitle="Table Mountain Hike"
+          tag="Hike"
+          icon="⛰️"
+          date="September 8th, 2023"
+          subtitle="Grand Teton National Park, Wyoming"
+          description="A very difficult hike, with almost 3000 feet
+                        elevation over 2.5 miles. But the lake at the top
+                        was well worth it. The water was glacier cold, but
+                        we still jumped in."
+        >
+          <HikeInfo
+            embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-table-mountain-trail-136c2f0?scrollZoom=false&u=i&sh=pxis8l"
+            distance="10.95 mi"
+            elevationGain="4,144 ft"
+            totalTime="8:24:20"
+          />
+        </SectionHeader>
+
+        {/* @ts-expect-error Server Component */}
+        <MediaGrid
+          imageConfig={ImagesConfig['2023/wyoming/teton/table-mountain']}
+        />
+      </section>
+
       <section id="cascade-canyon">
         <SectionHeader
           title="Cascade Canyon"
@@ -173,25 +201,21 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="table-mountain">
+      <section id="mount-glory">
         <SectionHeader
-          title="Table Mountain"
+          title="Teton Pass, Mount Glory"
           stickyHeaderTitle="Grand Teton National Park"
-          stickyHeaderSubtitle="Table Mountain Hike"
+          stickyHeaderSubtitle="Teton Pass, Mount Glory"
           tag="Hike"
           icon="⛰️"
-          date="September 8th, 2023"
-          subtitle="Grand Teton National Park, Wyoming"
-          description="A very difficult hike, with almost 3000 feet
-                        elevation over 2.5 miles. But the lake at the top
-                        was well worth it. The water was glacier cold, but
-                        we still jumped in."
+          date="August 23rd, 2023"
+          subtitle="Teton Pass, Wyoming"
         >
           <HikeInfo
-            embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-table-mountain-trail-136c2f0?scrollZoom=false&u=i&sh=pxis8l"
-            distance="10.95 mi"
-            elevationGain="4,144 ft"
-            totalTime="8:24:20"
+            embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-glory-peak-07b2ee9?scrollZoom=false&u=i&sh=pxis8l"
+            distance="3.01 mi"
+            elevationGain="1,923 ft"
+            totalTime="3:04:46"
           />
         </SectionHeader>
 
@@ -250,6 +274,45 @@ export default async function WyomingPage() {
         <MediaGrid
           imageConfig={ImagesConfig['2023/wyoming/yellowstone/washburn']}
         />
+      </section>
+
+      <section id="geysers">
+        <SectionHeader
+          title="Geysers and Hot Springs"
+          stickyHeaderTitle="Yellowstone National Park"
+          stickyHeaderSubtitle="Geysers and Hot Springs"
+          subtitle="Yellowstone National Park, Wyoming"
+        ></SectionHeader>
+
+        {/* @ts-expect-error Server Component */}
+        <MediaGrid
+          imageConfig={ImagesConfig['2023/wyoming/yellowstone/geysers']}
+        />
+      </section>
+
+      <section id="firehole">
+        <SectionHeader
+          title="Firehole River"
+          stickyHeaderTitle="Yellowstone National Park"
+          stickyHeaderSubtitle="Firehole River"
+          subtitle="Yellowstone National Park, Wyoming"
+        ></SectionHeader>
+
+        {/* @ts-expect-error Server Component */}
+        <MediaGrid
+          imageConfig={ImagesConfig['2023/wyoming/yellowstone/firehole']}
+        />
+      </section>
+
+      <section id="random">
+        <SectionHeader
+          title="Random Pics from the Trip"
+          stickyHeaderTitle="Random"
+          subtitle="Wyoming & Idaho"
+        ></SectionHeader>
+
+        {/* @ts-expect-error Server Component */}
+        <MediaGrid imageConfig={ImagesConfig['2023/wyoming/random']} />
       </section>
     </div>
   );

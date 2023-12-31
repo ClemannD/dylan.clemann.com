@@ -8,7 +8,7 @@ export const TripsConfig = [
         tags: ['🏞️ National Park', '⛰️ Hiking'],
         dates: 'August 2023',
         coverImageUrl:
-            'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/emerald-pond.webp',
+            'https://clemann.app/2023/wyoming/teton/table-mountain/015-grand-teton.webp',
         // coverImageUrl: 'https://clemann.app/2023/wyoming/lake_of_crags1.jpeg',
         path: 'travels/2023-08-Wyoming',
     },

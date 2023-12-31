@@ -41,7 +41,7 @@ function TripBox({ trip }: { trip: typeof TripsConfig[0] }) {
                     blurDataURL={
                         'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPMrpx0BgAFEQJETLQTEwAAAABJRU5ErkJggg=='
                     }
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="100vw"
                     quality={90}
                     alt={trip.name}
                 />

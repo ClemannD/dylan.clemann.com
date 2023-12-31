@@ -36,7 +36,7 @@ export default async function WyomingPage() {
 
             <section className="border-t border-b bg-white ">
                 <Image
-                    src="https://clemann.app/2023/wyoming/teton/table-mountain/grand-teton-pano.webp"
+                    src="https://clemann.app/2023/wyoming/teton/table-mountain/pano-004-grand-teton-pano.webp"
                     width={8130}
                     height={1910}
                     sizes="100vw"

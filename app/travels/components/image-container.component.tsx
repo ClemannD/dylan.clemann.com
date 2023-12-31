@@ -17,10 +17,10 @@ export default function ImageContainer({
       {ImageCaptions[photo.id] && (
         <div
           className={cn(
-            'absolute left-0 bottom-0 h-10 w-full bg-black bg-opacity-0 p-2 opacity-0 transition-opacity duration-100 ease-in-out group-hover:bg-opacity-50 group-hover:opacity-100'
+            'absolute left-0 bottom-0 h-6 w-full bg-black bg-opacity-0 p-1 opacity-0 transition-opacity duration-100 ease-in-out group-hover:bg-opacity-50 group-hover:opacity-100 md:h-10 md:p-2'
           )}
         >
-          <div className="text-white">
+          <div className="text-xs text-white md:text-base">
             {
               // @ts-ignore
               ImageCaptions[photo.id]

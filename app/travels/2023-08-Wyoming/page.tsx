@@ -239,7 +239,7 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/teton/table-mountain']}
+          imageConfig={ImagesConfig['2023/wyoming/teton/mount-glory']}
         />
       </section>
 

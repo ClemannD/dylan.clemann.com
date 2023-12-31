@@ -26,10 +26,6 @@ a {
     body {
         color: black;
         background: black;
-
-        controls {
-            border: 0px solid white;
-        }
     }
 }
 

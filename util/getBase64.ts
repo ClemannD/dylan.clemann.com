@@ -30,7 +30,7 @@ async function getBase64(imageUrl: string) {
 export default async function addBlurredDataUrls(
     photos: Photo[]
 ): Promise<Photo[]> {
-    if (true) {
+    if (process.env.NODE_ENV === 'development') {
         return photos;
     }
 

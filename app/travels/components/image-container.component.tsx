@@ -17,7 +17,11 @@ export default function ImageContainer({
                 alt={photo.alt ?? ''}
                 width={photo.width}
                 height={photo.height}
-                sizes={isPano ? '1500px' : '550px'}
+                sizes={
+                    isPano
+                        ? '100vw'
+                        : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                }
                 placeholder={photo.blurredDataUrl ? 'blur' : 'empty'}
                 blurDataURL={photo.blurredDataUrl ?? ''}
                 // className="transition-opacity duration-200 ease-in-out group-hover:opacity-90"

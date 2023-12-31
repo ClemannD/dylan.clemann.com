@@ -10,29 +10,29 @@ export default function HikeInfo({
     totalTime: string;
 }) {
     return (
-        <div className="mb-10 flex flex-col gap-4 lg:flex-row">
-            <div className="flex w-full justify-center gap-8 text-center lg:w-64 lg:flex-col">
-                <div className="flex flex-col gap-1">
-                    <div className="font">Distance</div>
-                    <div className="text-xl font-black">{distance}</div>
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="font">Elevation Gain</div>
-                    <div className="text-xl font-black">{elevationGain}</div>
-                </div>
-                <div className="flex flex-col gap-1">
-                    <div className="font">Total Time</div>
-                    <div className="text-xl font-black">{totalTime}</div>
-                </div>
+        <div className="flex flex-col gap-4 lg:flex-row">
+            <div className="flex w-full gap-8 text-center lg:w-64 lg:flex-col lg:justify-center">
+                <Info title="Distance" data={distance} />
+                <Info title="Elevation Gain" data={elevationGain} />
+                <Info title="Total Time" data={totalTime} />
             </div>
             <iframe
-                className=" inset-0"
+                // className="inset-0 border-0"
                 src={embedUrl}
                 height="400"
                 width="100%"
                 title="Map of the hike"
                 // loading="lazy"
             ></iframe>
+        </div>
+    );
+}
+
+function Info({ title, data }: { title: string; data: string }) {
+    return (
+        <div className="flex flex-col gap-0.5 text-left lg:gap-1 lg:text-center">
+            <div className="font text-xs text-zinc-600">{title}</div>
+            <div className="text-sm font-black lg:text-xl">{data}</div>
         </div>
     );
 }

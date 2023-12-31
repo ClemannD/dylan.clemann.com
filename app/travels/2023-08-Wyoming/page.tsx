@@ -1,159 +1,231 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { cn } from '../../../lib/contentful/utils/cn';
 import { Photo } from '../../../models/image.model';
 import HikeInfo from '../components/hike-info.component';
 import MediaCarousel from '../components/media-carousel.component';
 import MediaGrid from '../components/media-grid.component';
+import ScrollTopButton from '../components/scroll-top-button.component';
+import SectionHeader from '../components/section-header.component';
 import { ImagesConfig } from '../components/travel.data';
+
+function SectionLink({
+    href,
+    title,
+    icon,
+}: {
+    href: string;
+    title: string;
+    icon?: string;
+}) {
+    return (
+        <Link
+            href={href}
+            className="w-fit rounded-full px-3 pt-[2px] pb-[3px] text-sm font-medium text-zinc-700 transition-colors duration-100 ease-in-out hover:bg-slate-100 hover:text-blue-800 lg:text-sm"
+        >
+            <span className="mr-1 pb-[1px] text-lg leading-none">{icon}</span>{' '}
+            {title}
+        </Link>
+    );
+}
 
 export default async function WyomingPage() {
     return (
         <div className="">
-            <section className="w-full bg-white">
-                <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
-                    <div className="mb-10 flex justify-between">
-                        <div className="">
-                            <div className="text-medium mb-2 flex w-fit items-center gap-2 rounded-lg bg-slate-100 px-3 py-0.5 font-medium tracking-tight text-black">
-                                <div className="pb-1 text-lg leading-none">
-                                    ⛰️
-                                </div>
-                                <div> Hike</div>
-                            </div>
-                            <h2 className="text-3xl font-black">
-                                Lake of the Crags
-                            </h2>
-                            <h3>Grand Teton National Park, Wyoming</h3>
+            <ScrollTopButton />
+
+            <section className="border-t border-b bg-white ">
+                <Image
+                    src="https://clemann.app/2023/wyoming/teton/table-mountain/grand-teton-pano.webp"
+                    width={8130}
+                    height={1910}
+                    sizes="100vw"
+                    alt="Panorama of the Tetons"
+                />
+
+                <div className="container mx-auto w-full py-6 px-4 lg:py-10 lg:px-0">
+                    <h1 className="text-xl font-black leading-none lg:text-4xl">
+                        Summer in the Northern Rockies: Wyoming and Idaho
+                    </h1>
+                    <h2 className="text-zinc-700  lg:text-lg">
+                        Yellowstone, Grand Teton, Jackson Hole
+                    </h2>
+                    <h3 className="mb-3 text-xs text-zinc-700 lg:text-sm">
+                        August 11th, 2023 - September 11th, 2023
+                    </h3>
+
+                    <p className="text-base leading-tight lg:text-lg">
+                        A collection of pictures from our adventures in
+                        Yellowstone, Grand Teton, and Jackson Hole. Rachel and I
+                        hiked over 80 miles throughout the month.
+                    </p>
+
+                    <div className="mt-4 ">
+                        <div className="mb-3 border-b pb-1">
+                            <h4 className="text-xl font-extrabold">Sections</h4>
                         </div>
 
-                        <div className="text-sm uppercase text-zinc-700">
-                            August 12th, 2023
+                        <div className="mb-3 flex flex-col gap-1">
+                            <Link href="#grand-teton">
+                                <h5 className="text-lg font-semibold transition-colors duration-100 ease-in-out hover:text-blue-800">
+                                    Grand Teton National Park
+                                </h5>
+                            </Link>
+
+                            <SectionLink
+                                href="#lake-of-the-crags"
+                                icon="⛰️"
+                                title="Lake of the Crags"
+                            />
+                            <SectionLink
+                                href="#cascade-canyon"
+                                icon="⛰️"
+                                title="Cascade Canyon"
+                            />
+                            <SectionLink
+                                href="#table-mountain"
+                                icon="⛰️"
+                                title="Table Mountain"
+                            />
+                        </div>
+
+                        <div className="mb-3 flex flex-col gap-1">
+                            <Link href="#yellowstone">
+                                <h5 className="text-lg font-semibold transition-colors duration-100 ease-in-out hover:text-blue-800">
+                                    Yellowstone National Park
+                                </h5>
+                            </Link>
+                            <SectionLink
+                                href="#mount-washburn"
+                                icon="⛰️"
+                                title="Mount Washburn"
+                            />
                         </div>
                     </div>
+                </div>
+            </section>
 
+            <section id="grand-teton" className="pb-6 lg:pb-10">
+                <SectionHeader
+                    title="Grand Teton National Park"
+                    icon="⛰️"
+                    subtitle="Wyoming"
+                    description="Random Pictures from around the park"
+                ></SectionHeader>
+
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid imageConfig={ImagesConfig['2023/wyoming/teton']} />
+            </section>
+
+            <section
+                id="lake-of-the-crags"
+                className="w-full border-y bg-white  pb-10"
+            >
+                <SectionHeader
+                    title="Lake of the Crags"
+                    tag="Hike"
+                    icon="⛰️"
+                    date="August 12th, 2023"
+                    subtitle="Grand Teton National Park, Wyoming"
+                    description="A very difficult hike, with almost 3000 feet
+                        elevation over 2.5 miles. But the lake at the top
+                        was well worth it. The water was glacier cold, but
+                        we still jumped in."
+                >
                     <HikeInfo
                         embedUrl="https://www.alltrails.com/widget/recording/afternoon-hike-77ab786-67?scrollZoom=false&u=i&sh=pxis8l"
                         distance="4.90 mi"
                         elevationGain="2,861 ft"
                         totalTime="5:01:43"
                     />
+                </SectionHeader>
 
-                    {/* @ts-expect-error Server Component */}
-                    <MediaGrid
-                        imageConfig={
-                            ImagesConfig['2023/wyoming/teton/lake-of-the-crags']
-                        }
-                    />
-                </div>
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid
+                    imageConfig={
+                        ImagesConfig['2023/wyoming/teton/lake-of-the-crags']
+                    }
+                />
             </section>
 
-            <section className="w-full bg-slate-100">
-                <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
-                    <div className="mb-10 flex justify-between">
-                        <div className="">
-                            <div className="text-medium mb-2 flex w-fit items-center gap-2 rounded-lg bg-slate-100 px-3 py-0.5 font-medium tracking-tight text-black">
-                                <div className="pb-1 text-lg leading-none">
-                                    ⛰️
-                                </div>
-                                <div> Hike</div>
-                            </div>
-                            <h2 className="text-3xl font-black">
-                                Cascade Canyon
-                            </h2>
-                            <h3>Grand Teton National Park, Wyoming</h3>
-                        </div>
-
-                        <div className="text-sm uppercase text-zinc-700">
-                            September 2nd, 2023
-                        </div>
-                    </div>
-
+            <section id="cascade-canyon" className="w-full bg-slate-100">
+                <SectionHeader
+                    title="Cascade Canyon"
+                    tag="Hike"
+                    icon="⛰️"
+                    date="September 2nd, 2023"
+                    subtitle="Grand Teton National Park, Wyoming"
+                    description="A beautiful hike through the Grand Tetons. We
+                        saw a moose, and the views were spectacular."
+                >
                     <HikeInfo
                         embedUrl="https://www.alltrails.com/widget/recording/afternoon-hike-at-cascade-canyon-trail-c7b3f09?scrollZoom=false&u=i&sh=pxis8l"
                         distance="10.08 mi"
                         elevationGain="1,168 ft"
                         totalTime="5:04:20"
                     />
+                </SectionHeader>
 
-                    {/* @ts-expect-error Server Component */}
-                    <MediaGrid
-                        imageConfig={
-                            ImagesConfig['2023/wyoming/teton/cascade-creek']
-                        }
-                    />
-                </div>
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid
+                    imageConfig={
+                        ImagesConfig['2023/wyoming/teton/cascade-creek']
+                    }
+                />
             </section>
 
-            <section className="w-full bg-white">
-                <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
-                    <div className="mb-10 flex justify-between">
-                        <div className="">
-                            <div className="text-medium mb-2 flex w-fit items-center gap-2 rounded-lg bg-slate-100 px-3 py-0.5 font-medium tracking-tight text-black">
-                                <div className="pb-1 text-lg leading-none">
-                                    ⛰️
-                                </div>
-                                <div> Hike</div>
-                            </div>
-                            <h2 className="text-3xl font-black">
-                                Table Mountain
-                            </h2>
-                            <h3>Grand Teton National Park, Wyoming</h3>
-                        </div>
-
-                        <div className="text-sm uppercase text-zinc-700">
-                            September 8th, 2023
-                        </div>
-                    </div>
-
+            <section id="table-mountain" className="w-full bg-white">
+                <SectionHeader
+                    title="Table Mountain"
+                    tag="Hike"
+                    icon="⛰️"
+                    date="September 8th, 2023"
+                    subtitle="Grand Teton National Park, Wyoming"
+                    description="A very difficult hike, with almost 3000 feet
+                        elevation over 2.5 miles. But the lake at the top
+                        was well worth it. The water was glacier cold, but
+                        we still jumped in."
+                >
                     <HikeInfo
                         embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-table-mountain-trail-136c2f0?scrollZoom=false&u=i&sh=pxis8l"
                         distance="10.95 mi"
                         elevationGain="4,144 ft"
                         totalTime="8:24:20"
                     />
+                </SectionHeader>
 
-                    {/* @ts-expect-error Server Component */}
-                    <MediaGrid
-                        imageConfig={
-                            ImagesConfig['2023/wyoming/teton/table-mountain']
-                        }
-                    />
-                </div>
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid
+                    imageConfig={
+                        ImagesConfig['2023/wyoming/teton/table-mountain']
+                    }
+                />
             </section>
 
-            <section className="w-full bg-slate-100">
-                <div className="container mx-auto py-8 px-4 lg:py-20 lg:px-0">
-                    <div className="mb-10 flex justify-between">
-                        <div className="">
-                            <div className="text-medium mb-2 flex w-fit items-center gap-2 rounded-lg bg-slate-100 px-3 py-0.5 font-medium tracking-tight text-black">
-                                <div className="pb-1 text-lg leading-none">
-                                    ⛰️
-                                </div>
-                                <div> Hike</div>
-                            </div>
-                            <h2 className="text-3xl font-black">
-                                Mount Washburn
-                            </h2>
-                            <h3>Yellowstone, Wyoming</h3>
-                        </div>
-
-                        <div className="text-sm uppercase text-zinc-700">
-                            August 25th, 2023
-                        </div>
-                    </div>
-
+            <section id="mount-washburn" className="w-full bg-slate-100">
+                <SectionHeader
+                    title="Mount Washburn"
+                    tag="Hike"
+                    icon="⛰️"
+                    date="August 25th, 2023"
+                    subtitle="Yellowstone National Park, Wyoming"
+                    description="A beautiful hike through the Grand Tetons. We
+                        saw a moose, and the views were spectacular."
+                >
                     <HikeInfo
                         embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-dunraven-pass-to-mount-washburn-7cac11e?scrollZoom=false&u=i&sh=pxis8l"
                         distance="6.76 mi"
                         elevationGain="1,434 ft"
                         totalTime="3:15:57"
                     />
+                </SectionHeader>
 
-                    {/* @ts-expect-error Server Component */}
-                    <MediaGrid
-                        imageConfig={
-                            ImagesConfig['2023/wyoming/yellowstone/washburn']
-                        }
-                    />
-                </div>
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid
+                    imageConfig={
+                        ImagesConfig['2023/wyoming/yellowstone/washburn']
+                    }
+                />
             </section>
         </div>
     );

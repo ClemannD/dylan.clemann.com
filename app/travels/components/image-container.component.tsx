@@ -1,47 +1,60 @@
 import Image from 'next/image';
 import { cn } from '../../../lib/contentful/utils/cn';
-import { Photo } from '../../../models/image.model';
+import { Media } from '../../../models/image.model';
 import { ImageCaptions } from '../data/image-captions';
 
 export default function ImageContainer({
-  photo,
+  media,
   isPano = false,
 }: {
-  photo: Photo;
+  media: Media;
   isPano?: boolean;
 }) {
   return (
     <div className="group relative  mb-2 overflow-hidden">
-      {/* <div className="group mb-2 cursor-pointer overflow-hidden"> */}
-      {/* @ts-ignore */}
-      {ImageCaptions[photo.id] && (
-        <div
-          className={cn(
-            'absolute left-0 bottom-0 h-6 w-full bg-black bg-opacity-0 p-1 opacity-0 transition-opacity duration-100 ease-in-out group-hover:bg-opacity-50 group-hover:opacity-100 md:h-10 md:p-2'
-          )}
+      {media.isVideo ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          width="100%"
+          poster={media.base64Placeholder ?? ''}
         >
-          <div className="text-xs text-white md:text-base">
-            {
-              // @ts-ignore
-              ImageCaptions[photo.id]
+          <source src={media.src} type="video/mp4" />
+        </video>
+      ) : (
+        <>
+          {/* @ts-ignore */}
+          {ImageCaptions[media.id] && (
+            <div
+              className={cn(
+                'absolute left-0 bottom-0 h-6 w-full bg-black bg-opacity-0 p-1 opacity-0 transition-opacity duration-100 ease-in-out group-hover:bg-opacity-50 group-hover:opacity-100 md:h-10 md:p-2'
+              )}
+            >
+              <div className="text-xs text-white md:text-base">
+                {
+                  // @ts-ignore
+                  ImageCaptions[media.id]
+                }
+              </div>
+            </div>
+          )}
+          <Image
+            src={media.src}
+            alt={media.alt ?? ''}
+            width={media.width}
+            height={media.height}
+            sizes={
+              isPano
+                ? '100vw'
+                : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
             }
-          </div>
-        </div>
+            placeholder={media.base64Placeholder ? 'blur' : 'empty'}
+            blurDataURL={media.base64Placeholder ?? ''}
+          />
+        </>
       )}
-      <Image
-        src={photo.src}
-        alt={photo.alt ?? ''}
-        width={photo.width}
-        height={photo.height}
-        sizes={
-          isPano
-            ? '100vw'
-            : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-        }
-        placeholder={photo.base64Placeholder ? 'blur' : 'empty'}
-        blurDataURL={photo.base64Placeholder ?? ''}
-        // className="transition-opacity duration-200 ease-in-out group-hover:opacity-90"
-      />
     </div>
   );
 }

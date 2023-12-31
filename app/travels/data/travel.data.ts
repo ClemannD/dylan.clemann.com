@@ -1,4 +1,4 @@
-import { Photo } from '../../../models/image.model';
+import { Media } from '../../../models/image.model';
 
 export const TripsConfig = [
   {

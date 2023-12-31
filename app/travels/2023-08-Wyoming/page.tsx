@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '../../../lib/contentful/utils/cn';
-import { Photo } from '../../../models/image.model';
+import { Media } from '../../../models/image.model';
 import HikeInfo from '../components/hike-info.component';
 import MediaCarousel from '../components/media-carousel.component';
 import MediaGrid from '../components/media-grid.component';
@@ -124,7 +124,8 @@ export default async function WyomingPage() {
         </div>
       </section>
 
-      <section id="grand-teton">
+      <section>
+        <div id="grand-teton" className="relative -top-20 block" />
         <SectionHeader
           title="Grand Teton National Park"
           stickyHeaderTitle="Grand Teton National Park"
@@ -159,13 +160,31 @@ export default async function WyomingPage() {
           />
         </SectionHeader>
 
+        {/* <video autoPlay loop muted playsInline width="250">
+          <source
+            src="https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4"
+            type="video/mp4"
+          />
+        </video> */}
+
+        {/* <video
+          className="w-full"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4"
+        /> */}
+
         {/* @ts-expect-error Server Component */}
         <MediaGrid
           imageConfig={ImagesConfig['2023/wyoming/teton/lake-of-the-crags']}
         />
       </section>
 
-      <section id="table-mountain">
+      <section>
+        <div id="table-mountain" className="relative -top-20 block" />
+
         <SectionHeader
           title="Table Mountain"
           stickyHeaderTitle="Grand Teton National Park"
@@ -193,7 +212,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="cascade-canyon">
+      <section>
+        <div id="cascade-canyon" className="relative -top-20 block" />
+
         <SectionHeader
           title="Cascade Canyon"
           stickyHeaderTitle="Grand Teton National Park"
@@ -219,7 +240,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="mount-glory">
+      <section>
+        <div id="mount-glory" className="relative -top-20 block" />
+
         <SectionHeader
           title="Teton Pass, Mount Glory"
           stickyHeaderTitle="Grand Teton National Park"
@@ -243,7 +266,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="yellowstone">
+      <section>
+        <div id="yellowstone" className="relative -top-20 block" />
+
         <SectionHeader
           title="Yellowstone National Park"
           stickyHeaderTitle="Yellowstone National Park"
@@ -254,7 +279,8 @@ export default async function WyomingPage() {
         <MediaGrid imageConfig={ImagesConfig['2023/wyoming/yellowstone']} />
       </section>
 
-      <section id="artist-point">
+      <section>
+        <div id="artist-point" className="relative -top-20 block" />
         <SectionHeader
           title="Artist Point"
           stickyHeaderTitle="Yellowstone National Park"
@@ -268,7 +294,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="mount-washburn">
+      <section>
+        <div id="mount-washburn" className="relative -top-20 block" />
+
         <SectionHeader
           title="Mount Washburn"
           stickyHeaderTitle="Yellowstone National Park"
@@ -294,7 +322,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="geysers">
+      <section>
+        <div id="geysers" className="relative -top-20 block" />
+
         <SectionHeader
           title="Geysers and Hot Springs"
           stickyHeaderTitle="Yellowstone National Park"
@@ -308,7 +338,9 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="firehole">
+      <section>
+        <div id="firehole" className="relative -top-20 block" />
+
         <SectionHeader
           title="Firehole River"
           stickyHeaderTitle="Yellowstone National Park"
@@ -322,7 +354,8 @@ export default async function WyomingPage() {
         />
       </section>
 
-      <section id="random">
+      <section>
+        <div id="random" className="relative -top-20 block" />
         <SectionHeader
           title="Random Pics from the Trip"
           stickyHeaderTitle="Random"

@@ -218,9 +218,7 @@ export default async function WyomingPage() {
 
                 {/* @ts-expect-error Server Component */}
                 <MediaGrid
-                    imageConfig={
-                        ImagesConfig['2023/wyoming/yellowstone/washburn']
-                    }
+                    imageConfig={ImagesConfig['2023/wyoming/yellowstone']}
                 />
             </section>
 

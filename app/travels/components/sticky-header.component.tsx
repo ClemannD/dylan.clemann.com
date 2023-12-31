@@ -16,9 +16,9 @@ export default function StickyHeader({
             )}
         >
             <div className="flex h-full items-center">
-                <span className="font-bold">{title}</span>
+                <span className="text-sm font-bold md:text-base">{title}</span>
                 {subtitle && (
-                    <span className="ml-2 text-sm text-zinc-600">
+                    <span className="ml-2 text-xs text-zinc-600 md:text-sm">
                         {subtitle}
                     </span>
                 )}

@@ -209,6 +209,21 @@ export default async function WyomingPage() {
                 />
             </section>
 
+            <section id="yellowstone">
+                <SectionHeader
+                    title="Yellowstone National Park"
+                    stickyHeaderTitle="Yellowstone National Park"
+                    subtitle="Wyoming"
+                ></SectionHeader>
+
+                {/* @ts-expect-error Server Component */}
+                <MediaGrid
+                    imageConfig={
+                        ImagesConfig['2023/wyoming/yellowstone/washburn']
+                    }
+                />
+            </section>
+
             <section id="mount-washburn">
                 <SectionHeader
                     title="Mount Washburn"

@@ -17,7 +17,7 @@ export const ImageCaptions = {
   '2023/wyoming/yellowstone/011-bison-sunset':
     'Bison Herd in the plains at sunset',
   '2023/wyoming/yellowstone/012-old-faithful-rachel': '',
-  '2023/wyoming/yellowstone/014-plains': '',
+  '2023/wyoming/yellowstone/014-plains': 'Plains in Yellowstone',
   '2023/wyoming/yellowstone/015-yellowstone-lake': 'Yellowstone Lake',
   '2023/wyoming/yellowstone/099-snake': 'Bull Snake at Mammoth Hot Springs',
   '2023/wyoming/yellowstone/washburn/001-canyon-view':
@@ -170,18 +170,29 @@ export const ImageCaptions = {
     'View from Table Mountain',
   '2023/wyoming/teton/table-mountain/pano-006-table-mountain-full-pano':
     'View from Table Mountain',
-  '2023/wyoming/teton/mount-glory/001-mount-glory-hike': '',
-  '2023/wyoming/teton/mount-glory/002-hike-down': '',
-  '2023/wyoming/teton/mount-glory/003-bowl': '',
-  '2023/wyoming/teton/mount-glory/004-bowl-view': '',
-  '2023/wyoming/teton/mount-glory/005-summit-rachel': '',
-  '2023/wyoming/teton/mount-glory/006-bowl-walk': '',
-  '2023/wyoming/teton/mount-glory/007-bowl-walk2': '',
-  '2023/wyoming/teton/mount-glory/008-ridge-walk': '',
-  '2023/wyoming/teton/mount-glory/009-ridge-walk-2': '',
-  '2023/wyoming/teton/mount-glory/010-rock-picking': '',
-  '2023/wyoming/teton/mount-glory/011-ski-lake': '',
-  '2023/wyoming/teton/mount-glory/pano-001-mount-glory': '',
+  '2023/wyoming/teton/mount-glory/001-mount-glory-hike':
+    'Looking down on the trail to Mount Glory',
+  '2023/wyoming/teton/mount-glory/002-hike-down':
+    'Looking down on Teton Pass from the trail to Mount Glory',
+  '2023/wyoming/teton/mount-glory/003-bowl': 'Bowl at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/004-bowl-view':
+    'Bowl at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/005-summit-rachel':
+    'Rachel overlooking the Bowl at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/006-bowl-walk':
+    'Walking along the top of the Bowl at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/007-bowl-walk2':
+    'Walking along the top of the Bowl at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/008-ridge-walk':
+    'Walking along the ridge at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/009-ridge-walk-2':
+    'Walking along the ridge at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/010-rock-picking':
+    'Rachel picking rocks at the top of Mount Glory',
+  '2023/wyoming/teton/mount-glory/011-ski-lake':
+    'Ski lake at the bottom of the Bowl of Mount Glory',
+  '2023/wyoming/teton/mount-glory/pano-001-mount-glory':
+    'From the summit of Mount Glory, looking down on Jackson Hole',
   '2023/wyoming/teton/lake-of-the-crags/001-jenny-lake':
     'Jenny Lake, the start of the hike',
   '2023/wyoming/teton/lake-of-the-crags/002-climb-up0view':

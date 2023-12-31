@@ -22,8 +22,8 @@ export default function ImageContainer({
                         ? '100vw'
                         : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 }
-                placeholder={photo.blurredDataUrl ? 'blur' : 'empty'}
-                blurDataURL={photo.blurredDataUrl ?? ''}
+                placeholder={photo.base64Placeholder ? 'blur' : 'empty'}
+                blurDataURL={photo.base64Placeholder ?? ''}
                 // className="transition-opacity duration-200 ease-in-out group-hover:opacity-90"
             />
         </div>

@@ -18,6 +18,7 @@ async function getBase64(imageUrl: string) {
         const buffer = await res.arrayBuffer();
 
         const { base64 } = await getPlaiceholder(Buffer.from(buffer));
+        console.log('base64', base64);
 
         console.log(`Successfully blurred image: ${imageUrl}`);
 
@@ -30,9 +31,9 @@ async function getBase64(imageUrl: string) {
 export default async function addBlurredDataUrls(
     photos: Photo[]
 ): Promise<Photo[]> {
-    if (process.env.NODE_ENV === 'development') {
-        return photos;
-    }
+    // if (process.env.NODE_ENV === 'development') {
+    //     return photos;
+    // }
 
     // Make all requests at once instead of awaiting each one - avoiding a waterfall
     const base64Promises = photos.map((photo) => getBase64(photo.src));
@@ -41,7 +42,7 @@ export default async function addBlurredDataUrls(
     const base64Results = await Promise.all(base64Promises);
 
     const photosWithBlur: Photo[] = photos.map((photo, i) => {
-        photo.blurredDataUrl = base64Results[i];
+        photo.base64Placeholder = base64Results[i];
         return photo;
     });
 

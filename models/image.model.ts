@@ -6,7 +6,7 @@ const PhotoSchema = z.object({
     height: z.number(),
     src: z.string(),
     alt: z.string().optional(),
-    blurredDataUrl: z.string().optional(),
+    base64Placeholder: z.string().optional(),
 });
 
 export type Photo = z.infer<typeof PhotoSchema>;

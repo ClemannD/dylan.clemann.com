@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { TripsConfig } from './components/travel.data';
+import { TripsConfig } from './data/travel.data';
 
 export default function TravelPage() {
     return (

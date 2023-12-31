@@ -7,7 +7,7 @@ import MediaCarousel from '../components/media-carousel.component';
 import MediaGrid from '../components/media-grid.component';
 import ScrollTopButton from '../components/scroll-top-button.component';
 import SectionHeader from '../components/section-header.component';
-import { ImagesConfig } from '../components/travel.data';
+import { ImagesConfig } from '../data/travel.data';
 
 function SectionLink({
     href,
@@ -105,9 +105,10 @@ export default async function WyomingPage() {
                 </div>
             </section>
 
-            <section id="grand-teton" className="pb-6 lg:pb-10">
+            <section id="grand-teton" className="">
                 <SectionHeader
                     title="Grand Teton National Park"
+                    stickyHeaderTitle="Grand Teton National Park"
                     icon="⛰️"
                     subtitle="Wyoming"
                     description="Random Pictures from around the park"
@@ -123,6 +124,8 @@ export default async function WyomingPage() {
             >
                 <SectionHeader
                     title="Lake of the Crags"
+                    stickyHeaderTitle="Grand Teton National Park"
+                    stickyHeaderSubtitle="Lake of the Crags Hike"
                     tag="Hike"
                     icon="⛰️"
                     date="August 12th, 2023"
@@ -148,9 +151,11 @@ export default async function WyomingPage() {
                 />
             </section>
 
-            <section id="cascade-canyon" className="w-full bg-slate-100">
+            <section id="cascade-canyon">
                 <SectionHeader
                     title="Cascade Canyon"
+                    stickyHeaderTitle="Grand Teton National Park"
+                    stickyHeaderSubtitle="Cascade Canyon Hike"
                     tag="Hike"
                     icon="⛰️"
                     date="September 2nd, 2023"
@@ -174,9 +179,11 @@ export default async function WyomingPage() {
                 />
             </section>
 
-            <section id="table-mountain" className="w-full bg-white">
+            <section id="table-mountain">
                 <SectionHeader
                     title="Table Mountain"
+                    stickyHeaderTitle="Grand Teton National Park"
+                    stickyHeaderSubtitle="Table Mountain Hike"
                     tag="Hike"
                     icon="⛰️"
                     date="September 8th, 2023"
@@ -202,9 +209,11 @@ export default async function WyomingPage() {
                 />
             </section>
 
-            <section id="mount-washburn" className="w-full bg-slate-100">
+            <section id="mount-washburn">
                 <SectionHeader
                     title="Mount Washburn"
+                    stickyHeaderTitle="Yellowstone National Park"
+                    stickyHeaderSubtitle="Mount Washburn Hike"
                     tag="Hike"
                     icon="⛰️"
                     date="August 25th, 2023"

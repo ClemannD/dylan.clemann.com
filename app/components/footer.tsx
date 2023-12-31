@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getProjectSectionData } from '../sections/projects/projects.data';
 import GitHubButton from '../components/ui-elements/github-button.component';
 import Image from 'next/image';
-import { TripsConfig } from '../travels/components/travel.data';
+import { TripsConfig } from '../travels/data/travel.data';
 
 export default async function Footer() {
     const projectSection = await getProjectSectionData();

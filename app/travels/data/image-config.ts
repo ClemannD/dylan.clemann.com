@@ -981,15 +981,6 @@ export const ImagesConfig = {
     panos: [],
     images: [
       {
-        id: '2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4',
-        width: 2016,
-        height: 1512,
-        isVideo: true,
-        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4',
-        base64Placeholder:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgiDnKEHqMwWs7g/ceBjVjU7/C3vyZx0zrDzFoaWn8//10Rn8TA48UAAszDo3QP8XPAAAAAElFTkSuQmCC',
-      },
-      {
         id: '2023/wyoming/teton/lake-of-the-crags/001-jenny-lake',
         width: 2016,
         height: 1512,
@@ -997,6 +988,7 @@ export const ImagesConfig = {
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgiDnKEHqMwWs7g/ceBjVjU7/C3vyZx0zrDzFoaWn8//10Rn8TA48UAAszDo3QP8XPAAAAAElFTkSuQmCC',
       },
+
       {
         id: '2023/wyoming/teton/lake-of-the-crags/002-climb-up0view',
         width: 2016,
@@ -1005,6 +997,15 @@ export const ImagesConfig = {
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgUEllcNjNkP/advZ/hsg4PcOqpVF7/6/5/5+hqce6sFjGP1yNgZMBACg1Dsmm6L20AAAAAElFTkSuQmCC',
       },
+      {
+        id: '2023/wyoming/teton/lake-of-the-crags/climb-up-crags',
+        width: 2160,
+        height: 3840,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/climb-up-crags.mp4',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVR4nGM48fe/Uvpehvkn/oenZzFUVYXbOLMyCIgyiEgyAAC51Am68aJIswAAAABJRU5ErkJggg==',
+      },
+
       {
         id: '2023/wyoming/teton/lake-of-the-crags/003-climb-up-view-dnr',
         width: 1512,
@@ -1020,6 +1021,14 @@ export const ImagesConfig = {
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/004-emerald-pond.webp',
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AGuIq3W+/2mh/1eb/wAADABSZGuv2P/4//gAE2M6OI5qZLKqn8S1iT8UJbcPwsAAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/wyoming/teton/lake-of-the-crags/ramshead-lake',
+        width: 2160,
+        height: 3840,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/ramshead-lake.mp4',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVR4nGNYumbXvX//GcxtrHR0dRkYhJi41MQYZt9dPP3tFgCeDgrHEqXsUQAAAABJRU5ErkJggg==',
       },
       {
         id: '2023/wyoming/teton/lake-of-the-crags/005-lake-of-the-crags',
@@ -1068,6 +1077,14 @@ export const ImagesConfig = {
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/010-lake-of-the-crags-boys.webp',
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AAALQsnGuW1tX/Hx4wBDgsymudBAMyb/++MAhL//Olx/bGZa/+TPgS8U/5Anm+MAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/wyoming/teton/lake-of-the-crags/crags-river-falls',
+        width: 2160,
+        height: 3840,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-river-falls.mp4',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJ0lEQVR4nAEcAOP/ANDw/8j0/wAACxvT4v8AOjgysq18ALOzh+35mtt1D0HgXH+pAAAAAElFTkSuQmCC',
       },
     ],
   },

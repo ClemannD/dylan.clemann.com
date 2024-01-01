@@ -197,8 +197,9 @@ export const ImageCaptions = {
     'Jenny Lake, the start of the hike',
   '2023/wyoming/teton/lake-of-the-crags/002-climb-up0view':
     'Looking down on Jenny Lake from the climb up',
-  '2023/wyoming/teton/lake-of-the-crags/003-climb-up-view-dnr': 'Ramshead Lake',
-  '2023/wyoming/teton/lake-of-the-crags/004-emerald-pond': 'Lake of the Crags',
+  '2023/wyoming/teton/lake-of-the-crags/003-climb-up-view-dnr':
+    'Looking down on Jenny Lake from the climb up',
+  '2023/wyoming/teton/lake-of-the-crags/004-emerald-pond': 'Ramshead Lake',
   '2023/wyoming/teton/lake-of-the-crags/005-lake-of-the-crags':
     'Lake of the Crags',
   '2023/wyoming/teton/lake-of-the-crags/006-lake-of-the-crags-rachel-hands-up':

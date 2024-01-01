@@ -160,22 +160,6 @@ export default async function WyomingPage() {
           />
         </SectionHeader>
 
-        {/* <video autoPlay loop muted playsInline width="250">
-          <source
-            src="https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4"
-            type="video/mp4"
-          />
-        </video> */}
-
-        {/* <video
-          className="w-full"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-hike-up.mp4"
-        /> */}
-
         {/* @ts-expect-error Server Component */}
         <MediaGrid
           imageConfig={ImagesConfig['2023/wyoming/teton/lake-of-the-crags']}

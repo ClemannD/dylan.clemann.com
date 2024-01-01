@@ -998,12 +998,13 @@ export const ImagesConfig = {
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgUEllcNjNkP/advZ/hsg4PcOqpVF7/6/5/5+hqce6sFjGP1yNgZMBACg1Dsmm6L20AAAAAElFTkSuQmCC',
       },
       {
-        id: '2023/wyoming/teton/lake-of-the-crags/climb-up-crags',
-        width: 2160,
-        height: 3840,
-        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/climb-up-crags.mp4',
+        id: '2023/wyoming/teton/lake-of-the-crags/crags-river-falls-wide',
+        width: 3840,
+        height: 2160,
+        src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-river-falls-wide.mp4',
+        isVideo: true,
         base64Placeholder:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVR4nGM48fe/Uvpehvkn/oenZzFUVYXbOLMyCIgyiEgyAAC51Am68aJIswAAAABJRU5ErkJggg==',
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGPomjr/1f//3b2TNOWEGN7dWHb3wmxRRgZdJUEAuNAL1HAwTooAAAAASUVORK5CYII=',
       },
 
       {
@@ -1027,6 +1028,7 @@ export const ImagesConfig = {
         width: 2160,
         height: 3840,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/ramshead-lake.mp4',
+        isVideo: true,
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVR4nGNYumbXvX//GcxtrHR0dRkYhJi41MQYZt9dPP3tFgCeDgrHEqXsUQAAAABJRU5ErkJggg==',
       },
@@ -1083,6 +1085,7 @@ export const ImagesConfig = {
         width: 2160,
         height: 3840,
         src: 'https://clemann.app/2023/wyoming/teton/lake-of-the-crags/crags-river-falls.mp4',
+        isVideo: true,
         base64Placeholder:
           'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJ0lEQVR4nAEcAOP/ANDw/8j0/wAACxvT4v8AOjgysq18ALOzh+35mtt1D0HgXH+pAAAAAElFTkSuQmCC',
       },

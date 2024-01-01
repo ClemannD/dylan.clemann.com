@@ -113,9 +113,9 @@ export default function FullscreenImage() {
   ]);
 
   if (fullscreenMedia) {
-    document.body.classList.add('overflow-y-hidden');
+    document?.body.classList.add('overflow-y-hidden');
   } else {
-    document.body.classList.remove('overflow-y-hidden');
+    document?.body.classList.remove('overflow-y-hidden');
   }
 
   if (fullscreenMedia) {

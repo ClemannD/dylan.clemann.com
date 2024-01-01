@@ -30,6 +30,10 @@ a {
   }
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 @layer utilities {
   .clip-square {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);

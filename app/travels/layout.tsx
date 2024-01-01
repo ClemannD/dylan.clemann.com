@@ -2,56 +2,57 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getImageWidthForHeight } from '../../lib/contentful/contentful-image.helper';
 import { getHeaderData } from '../sections/header/header.data';
+import FullscreenImage, {
+  FullscreenImageContext,
+} from './components/fullscreen-image.component';
+import TravelProviders from './providers';
 
 export default async function TravelLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    const headerData = await getHeaderData();
+  const headerData = await getHeaderData();
 
-    return (
-        <div className="min-h-screen w-full  bg-slate-50 bg-[url('/topography.svg')] bg-repeat">
-            <nav className="sticky top-0 z-50 h-20 w-full border-b bg-slate-100 px-4 lg:px-10">
-                <div className="container mx-auto  h-full">
-                    <div className="flex h-full items-center justify-between">
-                        <Link
-                            href={'/travels'}
-                            className="flex h-full items-center gap-2"
-                        >
-                            <Image
-                                src={
-                                    'https:' +
-                                    headerData.logo?.fields.file?.url!
-                                }
-                                alt={headerData.logo?.fields.description!}
-                                height="35"
-                                width={getImageWidthForHeight(
-                                    headerData.logo!,
-                                    35
-                                )}
-                            ></Image>
-                            <div className="text-2xl font-black">Travels</div>
-                        </Link>
+  return (
+    <TravelProviders>
+      <FullscreenImage />
+      <div className="min-h-screen w-full  bg-slate-50 bg-[url('/topography.svg')] bg-repeat">
+        <nav className="sticky top-0 z-40 h-20 w-full border-b bg-slate-100 px-4 lg:px-10">
+          <div className="container mx-auto  h-full">
+            <div className="flex h-full items-center justify-between">
+              <Link
+                href={'/travels'}
+                className="flex h-full items-center gap-2"
+              >
+                <Image
+                  src={'https:' + headerData.logo?.fields.file?.url!}
+                  alt={headerData.logo?.fields.description!}
+                  height="35"
+                  width={getImageWidthForHeight(headerData.logo!, 35)}
+                ></Image>
+                <div className="text-2xl font-black">Travels</div>
+              </Link>
 
-                        <div className="flex items-center gap-12">
-                            <Link
-                                href={'/travels'}
-                                className="font-bold text-almostBlack transition-transform ease-in-out hover:scale-105"
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href={'/'}
-                                className="text-xs text-almostBlack transition-transform ease-in-out hover:scale-105"
-                            >
-                                Back to main site
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            {children}
-        </div>
-    );
+              <div className="flex items-center gap-12">
+                <Link
+                  href={'/travels'}
+                  className="font-bold text-almostBlack transition-transform ease-in-out hover:scale-105"
+                >
+                  Home
+                </Link>
+                <Link
+                  href={'/'}
+                  className="text-xs text-almostBlack transition-transform ease-in-out hover:scale-105"
+                >
+                  Back to main site
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+        {children}
+      </div>
+    </TravelProviders>
+  );
 }

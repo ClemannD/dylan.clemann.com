@@ -1,17 +1,36 @@
+'use client';
+
 import Image from 'next/image';
-import { cn } from '../../../lib/contentful/utils/cn';
+import { useContext } from 'react';
+import { cn } from '../../../lib/utils/cn';
 import { Media } from '../../../models/image.model';
 import { ImageCaptions } from '../data/image-captions';
+import { ImagesConfig } from '../data/image-config';
+import { SectionConfig } from '../data/sections-config.model';
+import { FullscreenImageContext } from './fullscreen-image.component';
 
 export default function ImageContainer({
   media,
+  mediaPath,
   isPano = false,
+  sectionConfigs,
 }: {
   media: Media;
+  mediaPath: keyof typeof ImagesConfig;
+  sectionConfigs: SectionConfig[];
   isPano?: boolean;
 }) {
+  const { setFullscreenMediaPath, setFullscreenMediaId, setSectionConfigs } =
+    useContext(FullscreenImageContext);
+
+  const imageClicked = () => {
+    setFullscreenMediaPath(mediaPath);
+    setFullscreenMediaId(media.id);
+    setSectionConfigs(sectionConfigs);
+  };
+
   return (
-    <div className="group relative  mb-2 overflow-hidden">
+    <div className="group relative mb-2 overflow-hidden" onClick={imageClicked}>
       {media.isVideo ? (
         <video
           autoPlay
@@ -45,6 +64,7 @@ export default function ImageContainer({
             alt={media.alt ?? ''}
             width={media.width}
             height={media.height}
+            className={cn('cursor-pointer')}
             sizes={
               isPano
                 ? '100vw'

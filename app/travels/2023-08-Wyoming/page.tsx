@@ -1,13 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { cn } from '../../../lib/contentful/utils/cn';
-import { Media } from '../../../models/image.model';
 import HikeInfo from '../components/hike-info.component';
-import MediaCarousel from '../components/media-carousel.component';
 import MediaGrid from '../components/media-grid.component';
 import ScrollTopButton from '../components/scroll-top-button.component';
 import SectionHeader from '../components/section-header.component';
-import { ImagesConfig } from '../data/image-config';
+import { SectionConfig } from '../data/sections-config.model';
 
 function SectionLink({
   href,
@@ -27,6 +24,61 @@ function SectionLink({
     </Link>
   );
 }
+
+const sectionConfigs: SectionConfig[] = [
+  {
+    headerTitle: 'Grand Teton National Park',
+    mediaPath: '2023/wyoming/teton',
+  },
+  {
+    headerTitle: 'Grand Teton National Park',
+    headerSubtitle: 'Lake of the Crags Hike',
+    mediaPath: '2023/wyoming/teton/lake-of-the-crags',
+  },
+  {
+    headerTitle: 'Grand Teton National Park',
+    headerSubtitle: 'Table Mountain Hike',
+    mediaPath: '2023/wyoming/teton/table-mountain',
+  },
+  {
+    headerTitle: 'Grand Teton National Park',
+    headerSubtitle: 'Cascade Canyon Hike',
+    mediaPath: '2023/wyoming/teton/cascade-creek',
+  },
+  {
+    headerTitle: 'Grand Teton National Park',
+    headerSubtitle: 'Teton Pass, Mount Glory',
+    mediaPath: '2023/wyoming/teton/mount-glory',
+  },
+  {
+    headerTitle: 'Yellowstone National Park',
+    mediaPath: '2023/wyoming/yellowstone',
+  },
+  {
+    headerTitle: 'Yellowstone National Park',
+    headerSubtitle: 'Artist Point',
+    mediaPath: '2023/wyoming/yellowstone/artist-point',
+  },
+  {
+    headerTitle: 'Yellowstone National Park',
+    headerSubtitle: 'Mount Washburn Hike',
+    mediaPath: '2023/wyoming/yellowstone/washburn',
+  },
+  {
+    headerTitle: 'Yellowstone National Park',
+    headerSubtitle: 'Geysers and Hot Springs',
+    mediaPath: '2023/wyoming/yellowstone/geysers',
+  },
+  {
+    headerTitle: 'Yellowstone National Park',
+    headerSubtitle: 'Firehole River',
+    mediaPath: '2023/wyoming/yellowstone/firehole',
+  },
+  {
+    headerTitle: 'Random',
+    mediaPath: '2023/wyoming/random',
+  },
+];
 
 export default async function WyomingPage() {
   return (
@@ -135,7 +187,10 @@ export default async function WyomingPage() {
         ></SectionHeader>
 
         {/* @ts-expect-error Server Component */}
-        <MediaGrid imageConfig={ImagesConfig['2023/wyoming/teton']} />
+        <MediaGrid
+          mediaPath="2023/wyoming/teton"
+          sectionConfigs={sectionConfigs}
+        />
       </section>
 
       <section id="lake-of-the-crags">
@@ -162,7 +217,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/teton/lake-of-the-crags']}
+          mediaPath="2023/wyoming/teton/lake-of-the-crags"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -192,7 +248,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/teton/table-mountain']}
+          mediaPath="2023/wyoming/teton/table-mountain"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -220,7 +277,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/teton/cascade-creek']}
+          mediaPath="2023/wyoming/teton/cascade-creek"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -246,7 +304,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/teton/mount-glory']}
+          mediaPath="2023/wyoming/teton/mount-glory"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -260,7 +319,10 @@ export default async function WyomingPage() {
         ></SectionHeader>
 
         {/* @ts-expect-error Server Component */}
-        <MediaGrid imageConfig={ImagesConfig['2023/wyoming/yellowstone']} />
+        <MediaGrid
+          mediaPath="2023/wyoming/yellowstone"
+          sectionConfigs={sectionConfigs}
+        />
       </section>
 
       <section>
@@ -274,7 +336,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/yellowstone/artist-point']}
+          mediaPath="2023/wyoming/yellowstone/artist-point"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -302,7 +365,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/yellowstone/washburn']}
+          mediaPath="2023/wyoming/yellowstone/washburn"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -318,7 +382,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/yellowstone/geysers']}
+          mediaPath="2023/wyoming/yellowstone/geysers"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -334,7 +399,8 @@ export default async function WyomingPage() {
 
         {/* @ts-expect-error Server Component */}
         <MediaGrid
-          imageConfig={ImagesConfig['2023/wyoming/yellowstone/firehole']}
+          mediaPath="2023/wyoming/yellowstone/firehole"
+          sectionConfigs={sectionConfigs}
         />
       </section>
 
@@ -347,7 +413,10 @@ export default async function WyomingPage() {
         ></SectionHeader>
 
         {/* @ts-expect-error Server Component */}
-        <MediaGrid imageConfig={ImagesConfig['2023/wyoming/random']} />
+        <MediaGrid
+          mediaPath="2023/wyoming/random"
+          sectionConfigs={sectionConfigs}
+        />
       </section>
     </div>
   );

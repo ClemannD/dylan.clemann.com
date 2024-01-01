@@ -121,8 +121,15 @@ export default function FullscreenImage() {
   if (fullscreenMedia) {
     return (
       <div className="fixed inset-0 z-50  bg-black bg-opacity-90">
-        <div className="flex h-16 w-full items-center justify-between bg-slate-50 px-4">
-          <div className="flex-1"></div>
+        <div className="flex h-16 w-full items-center justify-between bg-slate-100 px-4">
+          <div className="flex-1">
+            <button
+              className="flex h-10 w-10  items-center justify-center rounded-full border bg-white  text-2xl font-bold text-black transition-colors duration-200 ease-in-out hover:bg-slate-50  "
+              onClick={closeFullscreen}
+            >
+              &times;
+            </button>
+          </div>
           <div className="text-center">
             <div className="text-sm font-bold text-black">
               {
@@ -152,12 +159,18 @@ export default function FullscreenImage() {
             </div>
           </div>
 
-          <div className="flex flex-1 justify-end">
+          <div className="flex flex-1 justify-end gap-2">
             <button
-              className="flex h-10 w-10  items-center justify-center rounded-full border bg-white bg-opacity-50 text-2xl font-bold text-black hover:bg-opacity-70"
-              onClick={closeFullscreen}
+              className="flex h-10 items-center justify-center rounded-full border bg-white  px-4  text-black transition-colors duration-200 ease-in-out hover:bg-slate-50 "
+              onClick={goToPreviousMedia}
             >
-              &times;
+              Previous
+            </button>
+            <button
+              className="flex h-10 items-center justify-center rounded-full border bg-white  px-4  text-black transition-colors duration-200 ease-in-out hover:bg-slate-50"
+              onClick={goToNextMedia}
+            >
+              Next
             </button>
           </div>
         </div>

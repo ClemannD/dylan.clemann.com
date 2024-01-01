@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 import { useHotkeys } from '@mantine/hooks';
 import { Media } from '../../../models/image.model';
 import { ImageCaptions } from '../data/image-captions';
@@ -112,11 +112,13 @@ export default function FullscreenImage() {
     ['ArrowLeft', goToPreviousMedia],
   ]);
 
-  if (fullscreenMedia) {
-    document?.body.classList.add('overflow-y-hidden');
-  } else {
-    document?.body.classList.remove('overflow-y-hidden');
-  }
+  useEffect(() => {
+    if (fullscreenMedia) {
+      document?.body.classList.add('overflow-y-hidden');
+    } else {
+      document?.body.classList.remove('overflow-y-hidden');
+    }
+  }, [fullscreenMedia]);
 
   if (fullscreenMedia) {
     return (

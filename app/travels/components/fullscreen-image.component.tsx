@@ -122,17 +122,17 @@ export default function FullscreenImage() {
 
   if (fullscreenMedia) {
     return (
-      <div className="fixed inset-0 z-50  bg-black bg-opacity-90">
-        <div className="flex h-16 w-full items-center justify-between bg-slate-100 px-4">
-          <div className="flex-1">
+      <div className="fixed inset-0 z-50  flex flex-col bg-black bg-opacity-90">
+        <div className="min-h-16 flex w-full flex-wrap items-center justify-between gap-2 bg-slate-100 px-4 py-2 lg:flex-nowrap">
+          <div className="order-1 flex-grow">
             <button
-              className="flex h-10 w-10  items-center justify-center rounded-full border bg-white  text-2xl font-bold text-black transition-colors duration-200 ease-in-out hover:bg-slate-50  "
+              className="flex h-6 w-6 items-center justify-center  rounded-full border bg-white text-lg font-bold text-black transition-colors duration-200 ease-in-out hover:bg-slate-50 lg:h-10 lg:w-10 lg:text-2xl  "
               onClick={closeFullscreen}
             >
               &times;
             </button>
           </div>
-          <div className="text-center">
+          <div className="order-3 mx-auto w-full text-center lg:order-2 lg:w-auto">
             <div className="text-sm font-bold text-black">
               {
                 sectionConfigs?.find(
@@ -143,9 +143,8 @@ export default function FullscreenImage() {
               {sectionConfigs?.find(
                 (section) => section.mediaPath === mediaPath
               )?.headerSubtitle && (
-                <span className="text-sm font-normal text-zinc-600">
-                  {' '}
-                  -{' '}
+                <span className="block text-sm font-normal text-zinc-600 lg:inline">
+                  <span className="hidden lg:inline"> - </span>
                   {
                     sectionConfigs?.find(
                       (section) => section.mediaPath === mediaPath
@@ -155,28 +154,29 @@ export default function FullscreenImage() {
               )}
             </div>
 
-            <div className="text-lg font-bold text-black">
+            <div className="text-sm font-normal text-black lg:text-lg lg:font-bold">
               {/* @ts-ignore */}
               {ImageCaptions[fullscreenMedia.id]}
             </div>
           </div>
 
-          <div className="flex flex-1 justify-end gap-2">
+          <div className="order-2 flex flex-grow justify-end gap-2 lg:order-3">
             <button
-              className="flex h-10 items-center justify-center rounded-full border bg-white  px-4  text-black transition-colors duration-200 ease-in-out hover:bg-slate-50 "
+              className="flex h-6 items-center justify-center rounded-full border bg-white px-2 text-sm text-black transition-colors duration-200  ease-in-out hover:bg-slate-50 lg:h-10 lg:px-4 lg:text-base "
               onClick={goToPreviousMedia}
             >
               Previous
             </button>
             <button
-              className="flex h-10 items-center justify-center rounded-full border bg-white  px-4  text-black transition-colors duration-200 ease-in-out hover:bg-slate-50"
+              className="flex h-6 items-center justify-center rounded-full border bg-white px-2 text-sm text-black transition-colors duration-200  ease-in-out hover:bg-slate-50 lg:h-10 lg:px-4 lg:text-base"
               onClick={goToNextMedia}
             >
               Next
             </button>
           </div>
         </div>
-        <div className="flex h-full items-center justify-center">
+
+        <div className="flex flex-grow items-center justify-center">
           <Image
             className="max-w-screen max-h-screen object-contain"
             src={fullscreenMedia.src}

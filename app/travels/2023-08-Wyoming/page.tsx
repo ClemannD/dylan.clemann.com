@@ -96,7 +96,7 @@ export default async function WyomingPage() {
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAIAAAB2XpiaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVR4nGN4/f//soP3TbySGLjVADZhBkEXiAxiAAAAAElFTkSuQmCC"
         />
 
-        <div className="container mx-auto w-full py-6 px-4 lg:py-10 lg:px-0">
+        <div className="container mx-auto w-full py-6 px-4 lg:py-10 lg:px-4">
           <h1 className="text-xl font-black leading-none lg:text-4xl">
             Summer in the Northern Rockies: Wyoming and Idaho
           </h1>

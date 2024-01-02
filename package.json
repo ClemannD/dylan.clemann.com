@@ -21,6 +21,7 @@
     "contentful-management": "^10.21.4",
     "eslint": "8.28.0",
     "eslint-config-next": "^14.0.2",
+    "framer-motion": "^10.16.16",
     "next": "^14.0.2",
     "plaiceholder": "^3.0.0",
     "postcss": "^8.4.19",

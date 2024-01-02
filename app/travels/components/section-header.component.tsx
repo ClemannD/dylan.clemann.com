@@ -25,7 +25,7 @@ export default function SectionHeader({
   return (
     <>
       <StickyHeader title={stickyHeaderTitle} subtitle={stickyHeaderSubtitle} />
-      <div className="relative z-40  -mt-[25px] border-t  bg-slate-50 py-8 px-4 lg:px-0">
+      <div className="relative z-30  -mt-[25px] border-t  bg-slate-50 py-8 px-4 lg:px-4">
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             {icon && tag && (

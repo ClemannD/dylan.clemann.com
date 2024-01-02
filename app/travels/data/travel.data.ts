@@ -10,7 +10,7 @@ export const TripsConfig = [
     coverImageUrl:
       'https://clemann.app/2023/wyoming/teton/table-mountain/015-grand-teton.webp',
     // coverImageUrl: 'https://clemann.app/2023/wyoming/lake_of_crags1.jpeg',
-    path: 'travels/2023-08-Wyoming',
+    path: '/travels/2023-08-Wyoming',
   },
   {
     name: 'Smokey Mountains',
@@ -19,7 +19,7 @@ export const TripsConfig = [
     tags: ['🏞️ National Park', '⛰️ Hiking'],
     dates: 'May 2023',
     coverImageUrl: 'https://clemann.app/2023/tennessee/smokey.jpeg',
-    path: 'travels/2023-05-Smokey',
+    path: '/travels/2023-05-Smokey',
   },
   {
     name: 'F1 Miami GrandPrix',
@@ -28,7 +28,7 @@ export const TripsConfig = [
     tags: ['🏁 Event'],
     dates: 'May 2023',
     coverImageUrl: 'https://clemann.app/2023/miami-f1/f1-cover.jpeg',
-    path: 'travels/2023-05-F1',
+    path: '/travels/2023-05-F1',
   },
   {
     name: 'Vermont',
@@ -37,7 +37,7 @@ export const TripsConfig = [
     tags: ['🏂 Snowboarding'],
     dates: 'February 2023',
     coverImageUrl: 'https://clemann.app/2023/vermont/vermont-cover.jpeg',
-    path: 'travels/2023-02-Vermont',
+    path: '/travels/2023-02-Vermont',
   },
   {
     name: 'Whistler',
@@ -46,7 +46,7 @@ export const TripsConfig = [
     tags: ['🏂 Snowboarding'],
     dates: 'January 2023',
     coverImageUrl: 'https://clemann.app/2023/bc/whistler-cover.jpeg',
-    path: 'travels/2023-01-Whistler',
+    path: '/travels/2023-01-Whistler',
   },
   {
     name: 'Switzerland',
@@ -55,7 +55,7 @@ export const TripsConfig = [
     tags: ['🏂 Snowboarding', '🏔️ Hiking'],
     dates: 'December 2022',
     coverImageUrl: 'https://clemann.app/2022/switzerland/zermatt-cover.jpeg',
-    path: 'travels/2022-12-Switzerland',
+    path: '/travels/2022-12-Switzerland',
   },
   {
     name: 'Aspen',
@@ -64,7 +64,7 @@ export const TripsConfig = [
     tags: ['🏂 Snowboarding'],
     dates: 'January 2022',
     coverImageUrl: 'https://clemann.app/2022/aspen/aspen-cover.jpeg',
-    path: 'travels/2022-01-Aspen',
+    path: '/travels/2022-01-Aspen',
   },
   {
     name: 'Yosemite/Napa/SF',
@@ -73,7 +73,7 @@ export const TripsConfig = [
     tags: ['🏞️ National Park'],
     dates: 'August 2021',
     coverImageUrl: 'https://clemann.app/2022/california/yosemite-cover.jpeg',
-    path: 'travels/2021-08-California',
+    path: '/travels/2021-08-California',
   },
   {
     name: 'Rocky Mountain National Park',
@@ -82,7 +82,7 @@ export const TripsConfig = [
     tags: ['🏞️ National Park', '⛰️ Hiking'],
     dates: 'August 2020',
     coverImageUrl: 'https://clemann.app/2020/colorado/rocky-cover.jpeg',
-    path: 'travels/2020-08-Colorado',
+    path: '/travels/2020-08-Colorado',
   },
   {
     name: 'Europe',
@@ -91,6 +91,6 @@ export const TripsConfig = [
     tags: ['🌎 Sightseeing'],
     dates: 'June 2019',
     coverImageUrl: 'https://clemann.app/2019/europe/wengen-cover.jpeg',
-    path: 'travels/2019-06-Europe',
+    path: '/travels/2019-06-Europe',
   },
 ];

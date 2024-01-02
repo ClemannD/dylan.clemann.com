@@ -233,10 +233,7 @@ export default async function WyomingPage() {
           icon="⛰️"
           date="September 8th, 2023"
           subtitle="Grand Teton National Park, Wyoming"
-          description="A very difficult hike, with almost 3000 feet
-                        elevation over 2.5 miles. But the lake at the top
-                        was well worth it. The water was glacier cold, but
-                        we still jumped in."
+          description="The longest hike we did on the trip. Table Mountain summit is directly in the middle of the mountain range, with 360 degree views."
         >
           <HikeInfo
             embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-table-mountain-trail-136c2f0?scrollZoom=false&u=i&sh=pxis8l"
@@ -264,8 +261,7 @@ export default async function WyomingPage() {
           icon="⛰️"
           date="September 2nd, 2023"
           subtitle="Grand Teton National Park, Wyoming"
-          description="A beautiful hike through the Grand Tetons. We
-                        saw a moose, and the views were spectacular."
+          description="Hike through the main valley area of the park"
         >
           <HikeInfo
             embedUrl="https://www.alltrails.com/widget/recording/afternoon-hike-at-cascade-canyon-trail-c7b3f09?scrollZoom=false&u=i&sh=pxis8l"
@@ -352,8 +348,7 @@ export default async function WyomingPage() {
           icon="⛰️"
           date="August 25th, 2023"
           subtitle="Yellowstone National Park, Wyoming"
-          description="A beautiful hike through the Grand Tetons. We
-                        saw a moose, and the views were spectacular."
+          description="One of the highest points in Yellowstone, with a fire lookout tower at the top."
         >
           <HikeInfo
             embedUrl="https://www.alltrails.com/widget/recording/evening-hike-at-dunraven-pass-to-mount-washburn-7cac11e?scrollZoom=false&u=i&sh=pxis8l"

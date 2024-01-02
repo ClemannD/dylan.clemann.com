@@ -15,13 +15,16 @@ export default function TravelProviders({
   >();
   const [mediaId, setFullscreenMediaId] = useState<string | null>();
   const [sectionConfigs, setSectionConfigs] = useState<SectionConfig[]>([]);
+  const [isPanos, setIsPanos] = useState<boolean>(false);
 
   return (
     <FullscreenImageContext.Provider
       value={{
+        isPanos,
         mediaId,
         mediaPath,
         sectionConfigs,
+        setIsPanos,
         setFullscreenMediaPath,
         setFullscreenMediaId,
         setSectionConfigs,

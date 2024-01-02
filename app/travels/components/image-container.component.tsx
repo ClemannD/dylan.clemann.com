@@ -20,13 +20,18 @@ export default function ImageContainer({
   sectionConfigs: SectionConfig[];
   isPano?: boolean;
 }) {
-  const { setFullscreenMediaPath, setFullscreenMediaId, setSectionConfigs } =
-    useContext(FullscreenImageContext);
+  const {
+    setFullscreenMediaPath,
+    setFullscreenMediaId,
+    setSectionConfigs,
+    setIsPanos,
+  } = useContext(FullscreenImageContext);
 
   const imageClicked = () => {
     setFullscreenMediaPath(mediaPath);
     setFullscreenMediaId(media.id);
     setSectionConfigs(sectionConfigs);
+    setIsPanos(isPano);
   };
 
   return (

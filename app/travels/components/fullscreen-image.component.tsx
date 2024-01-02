@@ -10,17 +10,21 @@ import { SectionConfig } from '../data/sections-config.model';
 
 export default function FullscreenImage() {
   const {
+    isPanos,
     mediaPath,
     mediaId,
     sectionConfigs,
+    setIsPanos,
     setFullscreenMediaId,
     setFullscreenMediaPath,
   } = useContext(FullscreenMediaContext);
 
+  const accessorKey = isPanos ? 'panos' : 'images';
+
   const fullscreenMedia =
     mediaPath && mediaId
       ? // @ts-ignore
-        ImagesConfig[mediaPath ?? '']?.images.find(
+        ImagesConfig[mediaPath ?? '']?.[accessorKey].find(
           (image: Media) => image.id === mediaId
         )
       : null;
@@ -34,46 +38,70 @@ export default function FullscreenImage() {
   const goToNextMedia = () => {
     if (!mediaPath || !mediaId || !sectionConfigs) return;
 
+    const accessorKey = isPanos ? 'panos' : 'images';
+
     // @ts-ignore
     const imageConfig = ImagesConfig[mediaPath ?? ''];
-    const currentImageIndex = imageConfig.images.findIndex(
+    const currentImageIndex = imageConfig[accessorKey].findIndex(
       (image: Media) => image.id === mediaId
     );
 
-    if (currentImageIndex < imageConfig.images.length - 1) {
-      setFullscreenMediaId(imageConfig.images[currentImageIndex + 1].id);
+    if (currentImageIndex < imageConfig[accessorKey].length - 1) {
+      setFullscreenMediaId(imageConfig[accessorKey][currentImageIndex + 1].id);
     }
 
-    if (currentImageIndex === imageConfig.images.length - 1) {
+    if (currentImageIndex === imageConfig[accessorKey].length - 1) {
       const currentSectionIndex = sectionConfigs.findIndex(
         (section) => section.mediaPath === mediaPath
       );
 
       if (currentSectionIndex < sectionConfigs.length - 1) {
-        const nextSection = sectionConfigs[currentSectionIndex + 1];
+        const nextSection = isPanos
+          ? sectionConfigs[currentSectionIndex]
+          : sectionConfigs[currentSectionIndex + 1];
         setFullscreenMediaPath(nextSection.mediaPath);
-        setFullscreenMediaId(ImagesConfig[nextSection.mediaPath].images[0].id);
+
+        if (!isPanos && ImagesConfig[nextSection.mediaPath].panos[0]) {
+          setFullscreenMediaId(ImagesConfig[nextSection.mediaPath].panos[0].id);
+          setIsPanos(true);
+        } else {
+          setIsPanos(false);
+          setFullscreenMediaId(
+            ImagesConfig[nextSection.mediaPath].images[0].id
+          );
+        }
       }
 
       if (currentSectionIndex === sectionConfigs.length - 1) {
         setFullscreenMediaPath(sectionConfigs[0].mediaPath);
-        setFullscreenMediaId(
-          ImagesConfig[sectionConfigs[0].mediaPath].images[0].id
-        );
+        if (ImagesConfig[sectionConfigs[0].mediaPath].panos[0]) {
+          setIsPanos(true);
+          setFullscreenMediaId(
+            ImagesConfig[sectionConfigs[0].mediaPath].panos[0].id
+          );
+        } else {
+          setIsPanos(false);
+          setFullscreenMediaId(
+            ImagesConfig[sectionConfigs[0].mediaPath].images[0].id
+          );
+        }
       }
     }
   };
 
   const goToPreviousMedia = () => {
     if (!mediaPath || !mediaId || !sectionConfigs) return;
+
+    const accessorKey = isPanos ? 'panos' : 'images';
+
     // @ts-ignore
     const imageConfig = ImagesConfig[mediaPath ?? ''];
-    const currentImageIndex = imageConfig.images.findIndex(
+    const currentImageIndex = imageConfig[accessorKey].findIndex(
       (image: Media) => image.id === mediaId
     );
 
     if (currentImageIndex > 0) {
-      setFullscreenMediaId(imageConfig.images[currentImageIndex - 1].id);
+      setFullscreenMediaId(imageConfig[accessorKey][currentImageIndex - 1].id);
     }
 
     if (currentImageIndex === 0) {
@@ -82,13 +110,27 @@ export default function FullscreenImage() {
       );
 
       if (currentSectionIndex > 0) {
-        const previousSection = sectionConfigs[currentSectionIndex - 1];
+        const previousSection = !isPanos
+          ? sectionConfigs[currentSectionIndex]
+          : sectionConfigs[currentSectionIndex - 1];
+
         setFullscreenMediaPath(previousSection.mediaPath);
-        setFullscreenMediaId(
-          ImagesConfig[previousSection.mediaPath].images[
-            ImagesConfig[previousSection.mediaPath].images.length - 1
-          ].id
-        );
+
+        if (!isPanos && ImagesConfig[previousSection.mediaPath].panos[0]) {
+          setFullscreenMediaId(
+            ImagesConfig[previousSection.mediaPath].panos[
+              ImagesConfig[previousSection.mediaPath].panos.length - 1
+            ].id
+          );
+          setIsPanos(true);
+        } else {
+          setIsPanos(false);
+          setFullscreenMediaId(
+            ImagesConfig[previousSection.mediaPath].images[
+              ImagesConfig[previousSection.mediaPath].images.length - 1
+            ].id
+          );
+        }
       }
 
       if (currentSectionIndex === 0) {
@@ -106,10 +148,91 @@ export default function FullscreenImage() {
     }
   };
 
+  const goToNextSection = () => {
+    if (!mediaPath || !mediaId || !sectionConfigs) return;
+
+    const currentSectionIndex = sectionConfigs.findIndex(
+      (section) => section.mediaPath === mediaPath
+    );
+
+    if (currentSectionIndex < sectionConfigs.length - 1) {
+      const nextSection = sectionConfigs[currentSectionIndex + 1];
+      setFullscreenMediaPath(nextSection.mediaPath);
+
+      if (!isPanos && ImagesConfig[nextSection.mediaPath].panos[0]) {
+        setFullscreenMediaId(ImagesConfig[nextSection.mediaPath].panos[0].id);
+        setIsPanos(true);
+      } else {
+        setIsPanos(false);
+        setFullscreenMediaId(ImagesConfig[nextSection.mediaPath].images[0].id);
+      }
+    }
+
+    if (currentSectionIndex === sectionConfigs.length - 1) {
+      setFullscreenMediaPath(sectionConfigs[0].mediaPath);
+      if (ImagesConfig[sectionConfigs[0].mediaPath].panos[0]) {
+        setIsPanos(true);
+        setFullscreenMediaId(
+          ImagesConfig[sectionConfigs[0].mediaPath].panos[0].id
+        );
+      } else {
+        setIsPanos(false);
+        setFullscreenMediaId(
+          ImagesConfig[sectionConfigs[0].mediaPath].images[0].id
+        );
+      }
+    }
+  };
+
+  const goToPreviousSection = () => {
+    if (!mediaPath || !mediaId || !sectionConfigs) return;
+
+    const currentSectionIndex = sectionConfigs.findIndex(
+      (section) => section.mediaPath === mediaPath
+    );
+
+    if (currentSectionIndex > 0) {
+      const previousSection = sectionConfigs[currentSectionIndex - 1];
+
+      setFullscreenMediaPath(previousSection.mediaPath);
+
+      if (!isPanos && ImagesConfig[previousSection.mediaPath].panos[0]) {
+        setFullscreenMediaId(
+          ImagesConfig[previousSection.mediaPath].panos[
+            ImagesConfig[previousSection.mediaPath].panos.length - 1
+          ].id
+        );
+        setIsPanos(true);
+      } else {
+        setIsPanos(false);
+        setFullscreenMediaId(
+          ImagesConfig[previousSection.mediaPath].images[
+            ImagesConfig[previousSection.mediaPath].images.length - 1
+          ].id
+        );
+      }
+    }
+
+    if (currentSectionIndex === 0) {
+      setFullscreenMediaPath(
+        sectionConfigs[sectionConfigs.length - 1].mediaPath
+      );
+      setFullscreenMediaId(
+        ImagesConfig[sectionConfigs[sectionConfigs.length - 1].mediaPath]
+          .images[
+          ImagesConfig[sectionConfigs[sectionConfigs.length - 1].mediaPath]
+            .images.length - 1
+        ].id
+      );
+    }
+  };
+
   useHotkeys([
     ['Escape', closeFullscreen],
     ['ArrowRight', goToNextMedia],
     ['ArrowLeft', goToPreviousMedia],
+    ['ArrowDown', goToNextSection],
+    ['ArrowUp', goToPreviousSection],
   ]);
 
   useEffect(() => {
@@ -196,16 +319,20 @@ export default function FullscreenImage() {
 }
 
 const FullscreenMediaContext = createContext<{
+  isPanos: boolean;
   sectionConfigs: SectionConfig[] | null | undefined;
   mediaPath: keyof typeof ImagesConfig | null | undefined;
   mediaId: string | null | undefined;
+  setIsPanos: (isPanos: boolean) => void;
   setFullscreenMediaPath: (mediaPath: keyof typeof ImagesConfig | null) => void;
   setFullscreenMediaId: (mediaId: string | null) => void;
   setSectionConfigs: (sectionConfigs: SectionConfig[]) => void;
 }>({
+  isPanos: false,
   sectionConfigs: null,
   mediaPath: null,
   mediaId: null,
+  setIsPanos: () => {},
   setFullscreenMediaPath: () => {},
   setFullscreenMediaId: () => {},
   setSectionConfigs: () => {},

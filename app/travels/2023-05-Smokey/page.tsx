@@ -28,7 +28,7 @@ export default function WyomingPage() {
           height={1512}
           sizes="100vw"
           alt="Clouds over Smokey Mountains"
-          className="max-h-[400px] object-cover"
+          className="max-h-[400px] w-screen object-cover"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AFfH/1XF/1XH/1LF/wCv2PzL8//O8//X//8AAAYCEx4dCw8BNTw45EMUVxf66SkAAAAASUVORK5CYII="
         />

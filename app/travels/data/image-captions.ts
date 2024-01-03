@@ -235,4 +235,41 @@ export const ImageCaptions = {
   '2023/wyoming/random/stars': '',
   '2023/wyoming/random/tips-up': '',
   '2023/wyoming/random/yellowstone-whiskey': '',
+
+  '2023/smokey/alum-cave/001-stream': 'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/002-stream2': 'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/003-alum-cave-bluff-down': 'Alum Cave Bluff',
+  '2023/smokey/alum-cave/004-valley-view': 'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/005-forest-trail': 'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/006-mount-leconte-peak-lunch':
+    'Lunch at the summit of Mount LeConte',
+  '2023/smokey/alum-cave/007-mount-leconte-peak-view':
+    'View from the summit of Mount LeConte',
+  '2023/smokey/alum-cave/008-peak-view-wide':
+    'View from the summit of Mount LeConte',
+  '2023/smokey/alum-cave/009-peak-view-less-clouds':
+    'View from the summit of Mount LeConte',
+  '2023/smokey/alum-cave/010-rachel-mom-cliff-edge':
+    'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/011-dnr-cliff0edge':
+    'On the trail up to Mount LeConte',
+  '2023/smokey/alum-cave/012-lush-stream': 'On the trail up to Mount LeConte',
+  '2023/smokey/park/001-lush': 'In Smokey Mountain National Park',
+  '2023/smokey/park/002-over-clouds':
+    'View of the clouds rolling in to Smokey Mountain National Park',
+  '2023/smokey/park/003-over-clouds-top': "From Clingman's Dome",
+  '2023/smokey/park/004-cloud-plains':
+    'Above the clouds in Smokey Mountain National Park',
+  '2023/smokey/park/005-rolling-hills': 'Smokey Mountain National Park',
+  '2023/smokey/park/006-rolling-hills-and-clouds':
+    'Smokey Mountain National Park',
+  '2023/smokey/park/007-trail': 'Hiking on the Appalachian Trail',
+  '2023/smokey/park/1001-stream-hike': 'Hiking up to Grotto Falls',
+  '2023/smokey/park/1002-behind-falls': 'Grotto Falls',
+  '2023/smokey/park/1003-dnr-under-falls': 'Grotto Falls',
+  '2023/smokey/park/1004-llamas': 'Trail Pack Llamas',
+  '2023/smokey/park/2001-falls': 'Laurel Falls',
+  '2023/smokey/park/2002-falls': 'Laurel Falls',
+  '2023/smokey/park/2003-lunch-break': 'Lunch at Laurel Falls',
+  '2023/smokey/park/3001-wine-tasting': 'Wine Tasting in Gatlinburg',
 };

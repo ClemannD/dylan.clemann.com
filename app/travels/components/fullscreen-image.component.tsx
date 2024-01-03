@@ -247,7 +247,7 @@ export default function FullscreenImage() {
     return (
       <div className="fixed inset-0 z-50  flex flex-col bg-black bg-opacity-90">
         <div className="min-h-16 flex w-full flex-wrap items-center justify-between gap-2 bg-slate-100 px-4 py-2 lg:flex-nowrap">
-          <div className="order-1 flex-grow">
+          <div className="order-1 flex-grow lg:w-[185px]">
             <button
               className="flex h-6 w-6 items-center justify-center  rounded-full border bg-white text-lg font-bold text-black transition-colors duration-200 ease-in-out hover:bg-slate-50 lg:h-10 lg:w-10 lg:text-2xl  "
               onClick={closeFullscreen}
@@ -255,7 +255,7 @@ export default function FullscreenImage() {
               &times;
             </button>
           </div>
-          <div className="order-3 mx-auto w-full text-center lg:order-2 lg:w-auto">
+          <div className="order-3 mx-auto w-full text-center lg:order-2 lg:w-fit">
             <div className="text-sm font-bold text-black">
               {
                 sectionConfigs?.find(
@@ -283,7 +283,7 @@ export default function FullscreenImage() {
             </div>
           </div>
 
-          <div className="order-2 flex flex-grow justify-end gap-2 lg:order-3">
+          <div className="order-2 flex flex-grow justify-end gap-2 lg:order-3 lg:w-[185px] lg:flex-auto">
             <button
               className="flex h-6 items-center justify-center rounded-full border bg-white px-2 text-sm text-black transition-colors duration-200  ease-in-out hover:bg-slate-50 lg:h-10 lg:px-4 lg:text-base "
               onClick={goToPreviousMedia}

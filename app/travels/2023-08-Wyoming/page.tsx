@@ -4,26 +4,8 @@ import HikeInfo from '../components/hike-info.component';
 import MediaGrid from '../components/media-grid.component';
 import ScrollTopButton from '../components/scroll-top-button.component';
 import SectionHeader from '../components/section-header.component';
+import SectionLink from '../components/section-link.component';
 import { SectionConfig } from '../data/sections-config.model';
-
-function SectionLink({
-  href,
-  title,
-  icon,
-}: {
-  href: string;
-  title: string;
-  icon?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="w-fit rounded-full px-3 pt-[2px] pb-[3px] text-sm font-medium text-zinc-700 transition-colors duration-100 ease-in-out hover:bg-slate-100 hover:text-blue-800 lg:text-sm"
-    >
-      <span className="mr-1 pb-[1px] text-lg leading-none">{icon}</span> {title}
-    </Link>
-  );
-}
 
 const sectionConfigs: SectionConfig[] = [
   {

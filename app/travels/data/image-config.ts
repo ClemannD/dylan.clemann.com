@@ -1271,4 +1271,230 @@ export const ImagesConfig = {
       },
     ],
   },
+  '2023/smokey/park': {
+    panos: [],
+    images: [
+      {
+        id: '2023/smokey/park/001-lush',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/001-lush.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNgqD3hvujDs///Dzz4z8AgwGAaHV49sza03IchtppBw4HBLpbBPY8BAGItDtKYB+GuAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/002-over-clouds',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/002-over-clouds.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AJv7/43s/4Th/0yr/wC46f/E+/8VOi4ADQAADxoAIjYAHjcAHjYAu3gQeimij8sAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/003-over-clouds-top',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/003-over-clouds-top.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AKXb/5nJ/5G//5vM/wCq7v+u8//C//+5+/8ADAgA+/fXbWo8PDwUIukYvGMOgcgAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/004-cloud-plains',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/004-cloud-plains.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AFfH/1XF/1XH/1LF/wCv2PzL8//O8//X//8AAAYCEx4dCw8BNTw45EMUVxf66SkAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/005-rolling-hills',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/005-rolling-hills.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/ADqe/9b//2Co9Vij9gCNs75xkp6DqLWJrcAAIiUAJSgAHCIAAAkArdcQ6lKUe/wAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/006-rolling-hills-and-clouds',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/006-rolling-hills-and-clouds.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AABg3ABRyABizABo0gC+//9xtPeVveaezfsACAkAHx0AKy4DGhoAVHUPEYjXETkAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/007-trail',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/007-trail.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AFNRSt3u7VBQTQASBQCboIxFPzMAp456y7uuNisWAP/77uTUz5yBbkvUEn3mjxjuAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/1001-stream-hike',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/1001-stream-hike.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGN4+P/R9W/PnBLNGMzj5DK7IzQshRk42Bh8vBy0dWUZVNRU6uvKywoyAEFZDUt7WcZfAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/1002-behind-falls',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/1002-behind-falls.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AEY6HxMHAKqmZf/9owCam4ovLSewspnRyKkAxsGWGBYP0c/M9OzbP2ETDvSbxU0AAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/1003-dnr-under-falls',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/1003-dnr-under-falls.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGPgYGGITfL/9H8Bg6Qgw7L59QcvFTCEehtMbK7aun49w5b5rVFe9kX5WQAsLxAUadujtgAAAABJRU5ErkJggg==',
+      },
+      {
+        id: '2023/smokey/park/1004-llamas',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/1004-llamas.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AJ/PVbLbYtP/gdj/lgB4ilJMUT4FCgYmMCgA2cvDrqeck4+H8ermgzET9+s1SEMAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/park/2001-falls',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/2001-falls.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNYcSzW0kLNLUxOVZWVoWCyGCMng7IaT9/kBIa7/yvWn66SEGdQVRAAANpHCzHvw373AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/2002-falls',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/2002-falls.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNIbxdXUOcXZ2JoKI5mqF2pq2ugoizJ+v/3K4b6KUlpOaH79q5aMm8aANxHDlWgsyX2AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/2003-lunch-break',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/park/2003-lunch-break.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGO4+39uUKnmlk0LEmLDGSbvdqpqTtuydl58mAPDtPXBGTlhogIMkowMAGrND2wORU2sAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/park/3001-wine-tasting',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/park/3001-wine-tasting.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNQlRRwN9H0MdcqivBiEGFgsDU2jrbV74r3Yfj/6+q/+zs/X19xb88UAMnZD2vlLRpUAAAAAElFTkSuQmCC',
+      },
+    ],
+  },
+  '2023/smokey/alum-cave': {
+    panos: [],
+    images: [
+      {
+        id: '2023/smokey/alum-cave/001-stream',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/001-stream.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAL0lEQVR4nGNwz+Upn23ctz72yf8DDAy8DELiDHKaDNHlFgwy8kJeLtZFeRnZmWkA73YLYhGHrNMAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/alum-cave/002-stream2',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/alum-cave/002-stream2.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGM49by4YYajkalcX08Lw5P/E/pWBISGek6Z0MbQMs8ytcJUTo6dh4kBAFpTDvX744ghAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/003-alum-cave-bluff-down',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/alum-cave/003-alum-cave-bluff-down.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AA8AACcjKZyjuAAfFACfppzW4uwAsp2A8//Cl7d0APrfvv/tu8fIg0VHFMepHbJ9AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/004-valley-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/004-valley-view.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPY+/DHo///Tzz/P//4GwZVe3uLiGS7zEqb6AQGXk4GZQ0WZxcFS1MGAKIvD54GKmcLAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/005-forest-trail',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/alum-cave/005-forest-trail.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGMoqOw0s7Fj52JQUxFgePf//4J1m6PiHI5vX8Vg5+6vrKbOwMkQ4G8CAAl5DLs2/fX6AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/006-mount-leconte-peak-lunch',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/alum-cave/006-mount-leconte-peak-lunch.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPYduV5x+xFDrYmEgoqDEcffStt7dFTkBBhZmC4//+/b0qmijRPiLcjAEh7DwYPlc4nAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/007-mount-leconte-peak-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/007-mount-leconte-peak-view.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/ANr2/9/5/+T9/9Dq/wBvma93p7uRssClvdAAGh8EGyUJAAoAAA0AByEToqJpZwcAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/alum-cave/008-peak-view-wide',
+        width: 1963,
+        height: 1432,
+        src: 'https://clemann.app/2023/smokey/alum-cave/008-peak-view-wide.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AN/9/+L//8rj+bfQ5QCAmqiqzOCyzuK+1+sAAAUAVVhITFZCPEk7Gc4WZq7vg6MAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/smokey/alum-cave/009-peak-view-less-clouds',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/009-peak-view-less-clouds.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGM48+r/o///b339f+DeLwb/jOz4+s6s7mmZ7VMYeNkYvNy11bX4JWUZANjkEfkUTCC/AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/010-rachel-mom-cliff-edge',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/010-rachel-mom-cliff-edge.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPoWHHryL3/T37/N3f1ZciatCaroVlFVV1bWZiBQYBBQ49BRYyhNy8UAG3KDimX/0oKAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/011-dnr-cliff0edge',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/smokey/alum-cave/011-dnr-cliff0edge.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPYeOHbk///U3KLBRgZGDoXr7HzdHWxNpreVc3gE6oZ6KvRVRjZ3VgKAGDTEAVYGiD3AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/smokey/alum-cave/012-lush-stream',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/smokey/alum-cave/012-lush-stream.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGM4/by3fUZMSIitqYEMw9v/q2esjdXTkwsIdGE4/Dwrv82MiYdBWVUSAEj7Dmem5HkWAAAAAElFTkSuQmCC',
+      },
+    ],
+  },
 };

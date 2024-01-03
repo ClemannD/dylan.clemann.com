@@ -18,7 +18,8 @@ export const TripsConfig = [
     location: 'Gatlinburg TN, USA',
     tags: ['🏞️ National Park', '⛰️ Hiking'],
     dates: 'May 2023',
-    coverImageUrl: 'https://clemann.app/2023/tennessee/smokey.jpeg',
+    coverImageUrl:
+      'https://clemann.app/2023/smokey/park/006-rolling-hills-and-clouds.webp',
     path: '/travels/2023-05-Smokey',
   },
   {

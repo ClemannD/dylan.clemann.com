@@ -46,6 +46,21 @@ export default function WyomingPage() {
             A quick trip to Gatlinburg, Tennessee, with a few hikes in Smokey
             Mountain National Park.
           </p>
+
+          <div className="mt-6 flex flex-col items-center">
+            <iframe
+              className="aspect-video"
+              width="100%"
+              src="https://www.youtube-nocookie.com/embed/OdBLLWMcgJQ?si=61T9nt99ROD6FbEu"
+              title="YouTube video player"
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <p className="mt-1 text-sm">
+              *Make sure to set quality to 2160p (4k) for clearest picture
+            </p>
+          </div>
         </div>
       </section>
 

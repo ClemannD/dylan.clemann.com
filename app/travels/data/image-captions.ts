@@ -272,4 +272,13 @@ export const ImageCaptions = {
   '2023/smokey/park/2002-falls': 'Laurel Falls',
   '2023/smokey/park/2003-lunch-break': 'Lunch at Laurel Falls',
   '2023/smokey/park/3001-wine-tasting': 'Wine Tasting in Gatlinburg',
+  '2023/whistler/001-peak-views': '',
+  '2023/whistler/002-ski-mobile': '',
+  '2023/whistler/003-airbnb-view': '',
+  '2023/whistler/004-whistler-peak-view': '',
+  '2023/whistler/005-whistler-peak-view2': '',
+  '2023/whistler/006-solo-peak-view': '',
+  '2023/whistler/007-whistler-bowl': '',
+  '2023/whistler/008-airbnb-street': '',
+  '2023/whistler/009-borken-board': '',
 };

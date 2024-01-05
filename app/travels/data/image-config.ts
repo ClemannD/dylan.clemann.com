@@ -1497,4 +1497,81 @@ export const ImagesConfig = {
       },
     ],
   },
+  '2023/whistler': {
+    panos: [],
+    images: [
+      {
+        id: '2023/whistler/001-peak-views',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/whistler/001-peak-views.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AHzC/3Cr61yT0qLf/wCAxf+9//8AOl+Kx/8AmNz/q+7/AAUjAEB03oQWVA/8WPEAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/002-ski-mobile',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/002-ski-mobile.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGOYeur/jEf/N///n3fgP4NP6xEG6zgGHk0GLh0GBik7BvdaBn4nBikfAH3JDiK5oZxxAAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/whistler/003-airbnb-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/003-airbnb-view.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AO39/8vc7ODy/+Dv/wCls8Bea3WgsMDL2+4AKDI7DAMFDgYHUl5tCjMU9zdcq00AAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/004-whistler-peak-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/004-whistler-peak-view.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAL0lEQVR4nGNgYLRmMEqasubwz///GeTd08IKO2Py61lkDRmSilsisyoL63tTi5sBGV8O8N4Xp5IAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/005-whistler-peak-view2',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/005-whistler-peak-view2.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AOr//zBupwALTgABQwB+lKlUdpsZVIFUhKkAn7fNLE9tY3qSu8vYPtwRMj938UsAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/006-solo-peak-view',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/006-solo-peak-view.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AABIlYWz9EJ6vwBEiADW///j9v/H6f9pndgA6f//AAcnUnCTjKG9olIV3rHTGRgAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/007-whistler-bowl',
+        width: 2016,
+        height: 1512,
+        src: 'https://clemann.app/2023/whistler/007-whistler-bowl.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/AAAHSwAWVQBJjWap8AAAPmQAT388eaiUxPEAWHeUdpm4xd726///8w4RVUYycKIAAAAASUVORK5CYII=',
+      },
+      {
+        id: '2023/whistler/008-airbnb-street',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/whistler/008-airbnb-street.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AG/a/7D6/9H9/wBclb+EqstKa4AAEzJAAAobACVCAHWl2gA1UXSq46u+Eik1eu86AAAAAElFTkSuQmCC',
+      },
+      {
+        id: '2023/whistler/009-borken-board',
+        width: 1512,
+        height: 2016,
+        src: 'https://clemann.app/2023/whistler/009-borken-board.webp',
+        base64Placeholder:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGNwsDF19jWOmOxa/yKBgZ+Nwdfdcfn0/rgEJwb/BPsLx7b///skNy0CAPteD2mGEMLHAAAAAElFTkSuQmCC',
+      },
+    ],
+  },
 };

@@ -17,6 +17,11 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
+      <script
+        defer
+        src="https://umami.clemann.app/script.js"
+        data-website-id="442c8d1d-e081-4a58-b2cb-320a4d33df1f"
+      ></script>
       <head />
       <body className={montserrat.className}>
         {children}
@@ -24,11 +29,6 @@ export default function RootLayout({
         <Footer />
         <Analytics />
       </body>
-      <script
-        defer
-        src="https://umami.clemann.app/script.js"
-        data-website-id="442c8d1d-e081-4a58-b2cb-320a4d33df1f"
-      ></script>
     </html>
   );
 }

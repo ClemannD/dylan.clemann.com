@@ -24,6 +24,11 @@ export default function RootLayout({
         <Footer />
         <Analytics />
       </body>
+      <script
+        defer
+        src="https://umami.clemann.app/script.js"
+        data-website-id="442c8d1d-e081-4a58-b2cb-320a4d33df1f"
+      ></script>
     </html>
   );
 }

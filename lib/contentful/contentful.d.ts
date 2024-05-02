@@ -61,7 +61,7 @@ export interface IHeader extends Entry<IHeaderFields> {
 
 export interface IProjectPostFields {
     /** Project Title */
-    projectTitle?: string | undefined;
+    projectTitle: string;
 
     /** projectImage */
     projectImage?: Asset | undefined;

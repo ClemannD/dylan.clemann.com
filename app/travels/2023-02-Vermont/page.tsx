@@ -7,7 +7,7 @@ export default function VermontPage() {
       <ScrollTopButton />
       <section className="border-t bg-white ">
         <Image
-          src="https://clemann.app/2023/vermont/vermont-cover.jpeg"
+          src="https://travels.clemann.app/2023/vermont/vermont-cover.jpeg"
           width={2016}
           height={1512}
           sizes="100vw"

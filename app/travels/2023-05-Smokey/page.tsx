@@ -23,7 +23,7 @@ export default function WyomingPage() {
       <ScrollTopButton />
       <section className="border-t bg-white ">
         <Image
-          src="https://clemann.app/2023/smokey/park/006-rolling-hills-and-clouds.webp"
+          src="https://travels.clemann.app/2023/smokey/park/006-rolling-hills-and-clouds.webp"
           width={2016}
           height={1512}
           sizes="100vw"

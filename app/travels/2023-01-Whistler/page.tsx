@@ -9,7 +9,7 @@ export default function WhistlerPage() {
       <ScrollTopButton />
       <section className="border-t bg-white ">
         <Image
-          src="https://clemann.app/2023/bc/whistler-cover.jpeg"
+          src="https://travels.clemann.app/2023/bc/whistler-cover.jpeg"
           width={2016}
           height={1512}
           sizes="100vw"

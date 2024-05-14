@@ -1,7 +1,5 @@
-export default function WyomingPage() {
-    return (
-        <div>
-            <div></div>
-        </div>
-    );
+import Wip from '../../components/ui-elements/wip.component';
+
+export default function EuropePage() {
+  return <Wip />;
 }
